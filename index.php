@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">
 </head>
 <body>
     <!-- Sidebar -->
@@ -31,7 +32,12 @@
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
+<script src="./script/sidebar.js"></script>
     <script src="./script/footer_year.js"></script>
-</body>
+
+    <!-- Toggle Button -->
+    <div class="toggle-btn">
+        <i class="bi bi-list"></i>
+    </div>
 
 </html>
