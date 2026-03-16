@@ -35,9 +35,4 @@
 <script src="./script/sidebar.js"></script>
     <script src="./script/footer_year.js"></script>
 
-    <!-- Toggle Button -->
-    <div class="toggle-btn">
-        <i class="bi bi-list"></i>
-    </div>
-
 </html>
