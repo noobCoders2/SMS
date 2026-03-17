@@ -1,63 +1,50 @@
-:root{
-    /* Colors */
-    --body-colors: #e4e9f7;
-    --sidebar-color: #fff;
-    --primary-color: #695cfe;
-    --primary-color-light: #f6f5ff;
-    --toggle-color: #ddd;
-    --text-color: #707070;
-
-    /* Transition */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.4s ease;
-    --tran-05: all 0.5s ease;
-
+.logo-details {
+  display: flex;
+  align-items: center;
 }
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    background: var(--sidebar-color);
-    padding: 10px 0px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-} 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: var(--sidebar-color);
+  padding: 10px 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-.logo-name{
-    background: var(--primary-color);
-    color: var(--sidebar-color);
-    font-size: 23px;
-    padding:0;
-    border-radius:5px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 41px;
-    width: 41px;
-    margin-right: 5px;
-
+.logo-name {
+  background: var(--primary-color);
+  color: var(--sidebar-color);
+  font-size: 23px;
+  padding: 0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 41px;
+  width: 41px;
+  margin-right: 5px;
 }
-.logo-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
 }
-.sidebar .header-text .name{
-    font-weight: 700;
-    font-size: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
-.header-text .name2{
-    font-weight: 300;
-    font-size: 12px;
-    margin-top: -20px;
+.sidebar .header-text .name {
+  font-weight: 700;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header{
-    border-bottom: 1px solid var(--toggle-color);
-    padding-bottom: 10px;
+.header-text .name2 {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: -20px;
+}
+header {
+  border-bottom: 1px solid var(--toggle-color);
+  padding-bottom: 10px;
 }
