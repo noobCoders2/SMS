@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <div class="sidebar">
     <!-- Header of Sidebar -->
     <header class="logo-details d-flex align-items-center">
@@ -6,9 +10,9 @@
         </div>
         <div class="text header-text">
             <span class="name">Ericson Academy</span>
-        <div class="header-text">
-            <span class="name2">Management System</span>
-        </div>
+            <div class="header-text">
+                <span class="name2">Management System</span>
+            </div>
     </header>
 
     <ul class="nav-links container-fluid">
@@ -18,8 +22,8 @@
                 <span class="link-name">Dashboard</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="<?= ($current_page == 'student.php') ? 'active' : '' ?>">
+            <a href="<?= ($current_page == 'student.php') ? '#' : './modules/student/student.php' ?>">
                 <i class="bi bi-people"></i>
                 <span class="link-name">Student Management</span>
             </a>
