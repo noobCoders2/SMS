@@ -21,19 +21,9 @@
     <?php include('./includes/sidebar.php'); ?>
 
     <!-- Main Content -->
-     <div id="content" class="flex-grow-1">
-    <button id="sidebarToggle" class="btn btn-primary mb-3">Toggle Sidebar</button>
-    <h2>Main Content Area</h2>
-    <p>
-      This is the main content section. Resize the browser window to see the responsive behavior.
-    </p>
-    <p>
-      The sidebar can be toggled using the button above. On smaller screens, it slides in and out.
-    </p>
-  </div>
-</div>
 
     <section class="main-content">
+        <?php include('./includes/navbar.php'); ?>
         <h1>Hello World</h1>
         <h2>Student Management System</h2>
         <h3>Hello Po</h3>
