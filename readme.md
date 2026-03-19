@@ -2,7 +2,9 @@
 
 // Sa  AUTHENTICATION so login.php
 //So iba sa modules lalo like dashboard, student management
+# Problem:
 
+**different Browser need to fix css**
 
 
 
