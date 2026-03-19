@@ -25,6 +25,7 @@
 
         <h1>Student Management</h1>
         <p>Welcome to the student management section.</p>
+        <i>Try it out!</i>
 
         <!-- foooter -->
         <?php include('../../includes/footer.php'); ?>

@@ -7,6 +7,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <header class="logo-details d-flex align-items-center">
         <div class="logo-container">
             <img src="/StudentManagementSystem/assets/images/ericson.jpg" alt="ericson" class="img-icon">
+            <img src="./assets/images/weird.jpg" alt="ericson" class="img-icon">
         </div>
         <div class="text header-text">
             <span class="name">Ericson Academy</span>
@@ -24,7 +25,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             </a>
         </li>
         <li class="<?= ($current_page == 'student.php') ? 'active' : '' ?>">
-            <a href="<?= ($current_page == 'student.php') ? '#' : './modules/student/student.php' ?>">
+            <a href="<?= ($current_page == 'student.php') ? '#' : '../modules/student/student.php' ?>">
                 <i class="bi bi-people"></i>
                 <span class="link-name">Student Management</span>
             </a>
