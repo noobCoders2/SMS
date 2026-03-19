@@ -99,6 +99,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     </ul>
     <!-- Sidebar Footer -->
     <div class="sidebar-footer">
-        <?php include __DIR__. '/footer.php' ?>
+        <?php include __DIR__. 'footer.php' ?>
     </div>
-</div>
+</div>S
