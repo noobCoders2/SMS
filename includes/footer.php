@@ -1,7 +1,7 @@
 <!-- Foooter -->
 <div class="footer-content">
     <p>
-      &copy; <span id="year"></span> Your Company Name. All rights reserved.
+      &copy; <span id="year">2026</span> Ericson Academy. All rights reserved.
     </p>
     <nav class="footer-nav" aria-label="Footer navigation">
       <a href="#">Privacy Policy</a>

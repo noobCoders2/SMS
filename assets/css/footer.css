@@ -21,21 +21,21 @@
   --tran-05: all 0.5s ease;
 }
 .footer-content {
-  position: fixed;
-  bottom: 0;
-  left: 250px;
-  width: calc(100% - 250px);
+  position: static;
+  width: 100%;
   background: var(--sidebar-color);
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-sm);
   text-align: center;
   border-top: 1px solid var(--toggle-color);
-  transition: var(--tran-04);
 }
-
+p{
+  font-size: 15px;
+}
 .footer-nav a {
   color: var(--text-color);
   text-decoration: none;
-  margin: 0 var(--spacing-sm);
+  font-size: 15px;
+  margin: 3px;
   transition: var(--tran-03);
 }
 

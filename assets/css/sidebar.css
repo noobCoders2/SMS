@@ -1,6 +1,6 @@
 .logo-details {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .sidebar{
     position: fixed;
@@ -62,7 +62,7 @@ header{
     border-radius: 15px;
 }
 .nav-links li:hover{
-    background-color: #dbdee2;
+    background-color: var(--toggle-color);
 }
 .nav-links li:active{
     background-color: #b2cffb;
@@ -109,4 +109,8 @@ header{
     pointer-events: none;
     opacity: 0.6;
     cursor: default;
+}
+.sidebar-footer{
+    width: 100%;
+    box-sizing: border-box;
 }

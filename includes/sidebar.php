@@ -6,13 +6,14 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <!-- Header of Sidebar -->
     <header class="logo-details d-flex align-items-center">
         <div class="logo-container">
-            <img src="/School-Management-System/StudentManagementSystem/assets/ericson.jpg" alt="ericson" class="img-icon">
+            <img src="/StudentManagementSystem/assets/images/ericson.jpg" alt="ericson" class="img-icon">
         </div>
         <div class="text header-text">
             <span class="name">Ericson Academy</span>
             <div class="header-text">
                 <span class="name2">Management System</span>
             </div>
+        </div>
     </header>
 
     <ul class="nav-links container-fluid">
@@ -95,4 +96,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <span>System Settings</span>
             </a>
         </li>
+    </ul>
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <?php include __DIR__. '/footer.php' ?>
+    </div>
 </div>
