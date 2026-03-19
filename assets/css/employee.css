@@ -23,6 +23,12 @@ th, td{
     opacity: 70%;
     font-size: 15px;
 }
+.status-text{
+    padding: 3px 8px 3px 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}
 .action-button button{
     border: none;
     background-color: transparent;
@@ -32,6 +38,9 @@ th, td{
 }
 .action-button button:nth-child(2) i {
     color: green;
+}
+.action-button button:nth-child(3) i{
+    color: red;
 }
 .header-row{
     background-color: rgb(222, 219, 219);

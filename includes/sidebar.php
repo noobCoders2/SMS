@@ -18,14 +18,14 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
     </header>
 
     <ul class="nav-links container-fluid">
-        <li class="<?= ($current_page == 'index.php') ? 'active' : '' ?>">
-            <a href="<?= ($current_page == 'index.php') ? '#' : './index.php' ?>">
+        <li class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'index.php') ? '#' : $baseURL. '/index.php' ?>">
                 <i class="bi bi-columns"></i>
                 <span class="link-name">Dashboard</span>
             </a>
         </li>
-        <li class="<?= ($current_page == 'student.php') ? 'active' : '' ?>">
-            <a href="<?= ($current_page == 'student.php') ? '#' : './modules/student/student.php' ?>">
+        <li class="<?= ($currentPage == 'student.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'student.php') ? '#' : $baseURL. '/modules/student/student.php' ?>">
                 <i class="bi bi-people"></i>
                 <span class="link-name">Student Management</span>
             </a>

@@ -43,7 +43,8 @@
 
                 <!--Placeholder for table-->
                 <table class="employee-table container my-3 px-3">
-                    <tr class="header-row">
+                    <thead>
+                        <tr class="header-row">
                         <th>Employee ID</th>
                         <th>Last Name</th>
                         <th>First Name</th>
@@ -53,84 +54,15 @@
                         <th>Salary</th>
                         <th>Action</th>
                     </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>Placeholder</td>
-                        <td>Only</td>
-                        <td>Agent</td>
-                        <td>Information Technology</td>
-                        <td class="text-success">Active</td>
-                        <td>₱50,000</td>
-                        <td>
-                            <div class="action-button d-flex">
-                                <button><i class="btn bi bi-eye"></i></button>
-                                <button><i class="btn bi bi-pencil-square"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>Placeholder</td>
-                        <td>Only</td>
-                        <td>Agent</td>
-                        <td>Information Technology</td>
-                        <td class="text-success">Active</td>
-                        <td>50,000</td>
-                        <td>
-                            <div class="action-button d-flex">
-                                <button><i class="btn bi bi-eye"></i></button>
-                                <button><i class="btn bi bi-pencil-square"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>Placeholder</td>
-                        <td>Only</td>
-                        <td>Agent</td>
-                        <td>Information Technology</td>
-                        <td class="text-success">Active</td>
-                        <td>₱50,000</td>
-                        <td>
-                            <div class="action-button d-flex">
-                                <button><i class="btn bi bi-eye"></i></button>
-                                <button><i class="btn bi bi-pencil-square"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>Placeholder</td>
-                        <td>Only</td>
-                        <td>Agent</td>
-                        <td>Information Technology</td>
-                        <td class="text-success">Active</td>
-                        <td>₱50,000</td>
-                        <td>
-                            <div class="action-button d-flex">
-                                <button><i class="btn bi bi-eye"></i></button>
-                                <button><i class="btn bi bi-pencil-square"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>Placeholder</td>
-                        <td>Only</td>
-                        <td>Agent</td>
-                        <td>Information Technology</td>
-                        <td class="text-success">Active</td>
-                        <td>₱50,000</td>
-                        <td>
-                            <div class="action-button d-flex">
-                                <button><i class="btn bi bi-eye"></i></button>
-                                <button><i class="btn bi bi-pencil-square"></i></button>
-                            </div>
-                        </td>
-                    </tr>
+                    </thead>
+                    <tbody id="table-container">
+                        
+                    </tbody>
                 </table>
             </div>
         </div>
     </section>
+
+    <script type="module" src="../../assets/js/getTableData.js"></script>
 </body>
 </html>
