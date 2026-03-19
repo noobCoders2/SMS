@@ -1,5 +1,6 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
+$baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
 ?>
 
 <div class="sidebar">
@@ -29,8 +30,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <span class="link-name">Student Management</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="<?= ($currentPage == 'employee.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'employee.php') ? '#' : $baseURL. '/modules/employee/employee.php' ?>">
                 <i class="bi bi-person-fill-gear"></i>
                 <span class="link-name">Employee Management</span>
             </a>

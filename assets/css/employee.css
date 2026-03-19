@@ -1,0 +1,38 @@
+.employee-action button{
+    border: 0.5px solid rgb(200, 197, 197);
+}
+.employee-container{
+    background-color: white;
+}
+.btn-blue{
+    background-color: #0d6efd;
+    color: white;
+}
+.btn-blue:hover{
+    background-color: #0663ee;
+    color: white;
+}
+tr{
+    border-bottom: 0.1px solid rgb(200, 197, 197);
+}
+th, td{
+    padding: 8px;
+}
+#employee-search::placeholder{
+    color: gray;
+    opacity: 70%;
+    font-size: 15px;
+}
+.action-button button{
+    border: none;
+    background-color: transparent;
+}
+.action-button button:nth-child(1) i {
+    color: blue;
+}
+.action-button button:nth-child(2) i {
+    color: green;
+}
+.header-row{
+    background-color: rgb(222, 219, 219);
+}
