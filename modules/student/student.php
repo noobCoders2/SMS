@@ -26,42 +26,19 @@
     <section class="main-content">
         <?php include('../../includes/navbar.php'); ?>
 
-
-        <div class="container-fluid mb-3">
-
-            <!-- Title + Actions -->
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-
-                <!-- Left: Title -->
-                <div>
-                    <h4 class="mb-0 fw-bold">Student Management</h4>
-                    <small class="text-muted">Manage student records and information</small>
-                </div>
-
-                <!-- Right: Actions -->
-                <div class="d-flex align-items-center gap-2">
-
-                    <!-- Search -->
-
-
-                    <!-- Filter -->
-                    <button class="btn btn-light">
-                        <i class="bi bi-funnel"></i>
-                        filter
-                    </button>
-
-                    <!-- Export -->
-                    <button class="btn btn-success">
-                        <i class="bi bi-file-earmark-excel"></i>
-                        Export
-                    </button>
-
-                    <!-- Add -->
-                    <button class="btn btn-primary">
-                        <i class="bi bi-person-plus"></i> Add
-                    </button>
-
-                </div>
+        <!-- Header Student Management -->
+        <div class="student-header d-flex flex-row justify-content-between m-3 p-3">
+            <div class="student-title">
+                <h4>Student Management</h4>
+                <p>Managed student records and information</p>
+            </div>
+            <div class="student-action d-flex align-items-center">
+                <!-- Filter -->
+                <button class="btn btn-light mx-1 px-4 py-2"><i class="bi bi-funnel me-2"></i>Filter</button>
+                <!-- Export -->
+                <button class="btn btn-light mx-1 px-4 py-2"><i class="bi bi-download me-2"></i>Export</button>
+                <!-- Add Student -->
+                <button class="btn mx-1 px-4 py-2 btn-primary"><i class="bi bi-plus me-2 fs-5"></i>Add Student</button>
             </div>
         </div>
 
@@ -95,8 +72,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <!-- Bootstrap JS  -->

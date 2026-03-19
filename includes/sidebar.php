@@ -49,8 +49,8 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <li><a href="#">Class Schedule</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#">
+        <li class="<?= ($currentPage == 'enrollment.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'enrollment.php') ? '#' : $baseURL. '/modules/Enrollment/enrollment.php' ?>">
                 <i class="bi bi-person-plus"></i>
                 <span class="link-name">Enrollment</span>
             </a>
