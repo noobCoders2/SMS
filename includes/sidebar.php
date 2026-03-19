@@ -24,7 +24,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             </a>
         </li>
         <li class="<?= ($current_page == 'student.php') ? 'active' : '' ?>">
-            <a href="<?= ($current_page == 'student.php') ? '#' : '../modules/student/student.php' ?>">
+            <a href="<?= ($current_page == 'student.php') ? '#' : __DIR__.'../modules/student/student.php' ?>">
                 <i class="bi bi-people"></i>
                 <span class="link-name">Student Management</span>
             </a>

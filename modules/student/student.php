@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,9 @@
     <link href="../../assets/css/navbar.css" rel="stylesheet">
     <link href="../../assets/css/footer.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <!-- Sidebar -->
     <?php include('../../includes/sidebar.php'); ?>
 
@@ -23,12 +25,35 @@
     <section class="main-content">
         <?php include('../../includes/navbar.php'); ?>
 
-        <h1>Student Management</h1>
-        <p>Welcome to the student management section.</p>
-        <i>Try it out!</i>
 
-        <!-- foooter -->
-        <?php include('../../includes/footer.php'); ?>
+        <nav class="navbar bg<nav class=" navbar bg-body-tertiary">
+
+            <div class="container-fluid ">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="head1 p-1">
+                        <h2>EricsonAcademy</h2>
+                    </div>
+
+                    <div class="head2">
+                        <p>Management Student Records and information</p>
+                    </div>
+                </div>
+                <!-- Filter Export Add Student -->
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 flex-fill">
+                        <i class="bi bi-funnel"></i>
+                    </div>
+                    <div class="p-2 flex-fill">
+                        <i class="bi bi-funnel"></i>
+                    </div>
+                    <div class="p-2 flex-fill">
+                        <i class="bi bi-funnel"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
     </section>
 
     <!-- Bootstrap JS  -->
@@ -36,4 +61,5 @@
     <!-- Custom JS -->
     <script src="../../assets/js/footer_year.js"></script>
 </body>
+
 </html>

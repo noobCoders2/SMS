@@ -21,8 +21,6 @@
     <?php include('./includes/sidebar.php'); ?>
 
     <!-- Main Content -->
-
-
     <section class="main-content">
         <?php include('./includes/navbar.php'); ?>
         <h1>Hello World</h1>
