@@ -22,5 +22,45 @@ export const studentList = [
     "program": "Bachelor of Science in Computer Science",
     "year": "3rd Year",
     "status": "Active"
+  },
+  {
+    "id": 4,
+    "last_name": "Sorriano",
+    "first_name": "Stephanie",
+    "program": "Bachelor of Science in Computer Science",
+    "year": "3rd Year",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "last_name": "Sorriano",
+    "first_name": "Stephanie",
+    "program": "Bachelor of Science in Computer Science",
+    "year": "3rd Year",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "last_name": "Sorriano",
+    "first_name": "Stephanie",
+    "program": "Bachelor of Science in Computer Science",
+    "year": "3rd Year",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "last_name": "Sorriano",
+    "first_name": "Stephanie",
+    "program": "Bachelor of Science in Computer Science",
+    "year": "3rd Year",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "last_name": "Sorriano",
+    "first_name": "Stephanie",
+    "program": "Bachelor of Science in Computer Science",
+    "year": "3rd Year",
+    "status": "Active"
   }
-]
+];

@@ -17,8 +17,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
     </header>
 
     <ul class="nav-links container-fluid">
-        <li>
-            <a href="#">
+        <li class="<?= ($current_page == 'index.php') ? 'active' : '' ?>">
+            <a href="<?= ($current_page == 'index.php') ? '#' : './index.php' ?>">
                 <i class="bi bi-columns"></i>
                 <span class="link-name">Dashboard</span>
             </a>
