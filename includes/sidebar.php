@@ -18,14 +18,14 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
     </header>
 
     <ul class="nav-links container-fluid">
-        <li>
-            <a href="#">
+        <li class="<?= ($current_page == 'index.php') ? 'active' : '' ?>">
+            <a href="<?= ($current_page == 'index.php') ? '#' : './index.php' ?>">
                 <i class="bi bi-columns"></i>
                 <span class="link-name">Dashboard</span>
             </a>
         </li>
         <li class="<?= ($current_page == 'student.php') ? 'active' : '' ?>">
-            <a href="<?= ($current_page == 'student.php') ? '#' : __DIR__.'../modules/student/student.php' ?>">
+            <a href="<?= ($current_page == 'student.php') ? '#' : './modules/student/student.php' ?>">
                 <i class="bi bi-people"></i>
                 <span class="link-name">Student Management</span>
             </a>
@@ -100,6 +100,6 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
     </ul>
     <!-- Sidebar Footer -->
     <div class="sidebar-footer">
-        <?php include __DIR__. '/footer.php' ?>
+        <?php include __DIR__ . '/footer.php' ?>
     </div>
 </div>
