@@ -25,6 +25,4 @@ function renderTable(data) {
         `;
     });
 }
-
-// Initial load
 renderTable(studentList);
