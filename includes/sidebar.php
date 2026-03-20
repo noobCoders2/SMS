@@ -55,16 +55,16 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <span class="link-name">Enrollment</span>
             </a>
         </li>
-        <li>
-            <a href="">
+        <li class="<?= ($currentPage == 'grade.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'grade.php') ? '#' : $baseURL. '/modules/grade_management/grade.php' ?>">
                 <i class="bi bi-file-earmark-text"></i>
-                <span>Grade Management</span>
+                <span class="link-name">Grade Management</span>
             </a>
         </li>
         <li>
             <a href="">
                 <i class="bi bi-person-check"></i>
-                <span>Attendance</span>
+                <span class="link-name">Attendance</span>
             </a>
         </li>
         <li class="accounting-button">
