@@ -36,7 +36,7 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <span class="link-name">Employee Management</span>
             </a>
         </li>
-        <li class="academic-button">
+        <li class="academic-button <?= ($currentPage == 'academic.php') ? 'active' : '' ?>">
             <input type="checkbox" id="academic-clicked">
             <label for="academic-clicked" class="academic-link">
                 <i class="bi bi-book"></i>
@@ -44,9 +44,24 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
             </label>
             <ul class="dropdown-academic">
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Class Schedule</a></li>
+                <li class="academic-button <?= ($currentPage == 'courses.php') ? 'active' : '' ?>">
+                    <a href="<?= ($currentPage == 'courses.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=courses' ?>">
+                        <i class="bi bi-journal-bookmark"></i>
+                        <span class="ms-2">Courses</span>
+                    </a>
+                </li>
+                <li class="academic-button <?= ($currentPage == 'subjects.php') ? 'active' : '' ?>">
+                    <a href="<?= ($currentPage == 'subjects.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=subjects' ?>">
+                        <i class="bi bi-book"></i>
+                        <span class="ms-2">Subjects</span>
+                    </a>
+                </li>
+                <li class="academic-button <?= ($currentPage == 'schedules.php') ? 'active' : '' ?>">
+                    <a href="<?= ($currentPage == 'schedules.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=schedules' ?>">
+                    <i class="bi bi-calendar"></i>
+                    <span class="ms-2">Schedules</span>
+                </a>
+            </li>
             </ul>
         </li>
         <li class="<?= ($currentPage == 'enrollment.php') ? 'active' : '' ?>">

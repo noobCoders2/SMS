@@ -114,3 +114,9 @@ header{
     width: 100%;
     box-sizing: border-box;
 }
+.academic-button .dropdown-academic li{
+    margin: 5px 0px;
+}
+.academic-button .dropdown-academic li:hover{
+    background-color: var(--toggle-color);
+}
