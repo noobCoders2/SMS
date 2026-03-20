@@ -50,7 +50,7 @@ body {
   background: var(--sidebar-color);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
-  padding: var(--spacing-lg);
+  padding: 10px;
   margin-bottom: var(--spacing-md);
   border: none;
 }
