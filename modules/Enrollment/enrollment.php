@@ -32,7 +32,7 @@
                     <p>Managed student enrollment records and information</p>
                 </div>
                 <div class="employee-action d-flex align-items-center">
-                    <button class="btn btn-blue mx-1 px-4 py-2"><i class="bi bi-plus me-2 fs-5"></i>New Enrollment</button>
+                    <button class="btn btn-blue mx-1 px-4 py-2 btn-primary"><i class="bi bi-plus me-2 fs-5"></i>New Enrollment</button>
                 </div>
             </div>
 
