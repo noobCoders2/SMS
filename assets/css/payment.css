@@ -1,0 +1,36 @@
+.payment-action button{
+    border: 0.5px solid rgb(200, 197, 197);
+}
+.payment-container{
+    background-color: white;
+}
+tr{
+    border-bottom: 0.1px solid rgb(200, 197, 197);
+}
+th, td{
+    padding: 8px;
+}
+#payment-search::placeholder{
+    color: gray;
+    opacity: 70%;
+    font-size: 15px;
+}
+.status-text{
+    padding: 3px 8px 3px 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}
+.header-row{
+    background-color: rgb(222, 219, 219);
+    font-size: 14px;
+}
+.body-row{
+    font-size: 13px;
+}
+.paidStatusText{
+    padding: 3px 8px 3px 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}

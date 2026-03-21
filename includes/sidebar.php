@@ -1,6 +1,9 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
 $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
+$tab = $_GET['tab'] ?? '';
+$isAcademic = ($currentPage == 'academic.php');
+$isAccounting = ($currentPage == 'accounting.php')
 ?>
 
 <div class="sidebar">
@@ -43,25 +46,25 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <span class="link-name">Academic Management</span>
                 <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
             </label>
-            <ul class="dropdown-academic">
-                <li class="academic-button <?= ($currentPage == 'courses.php') ? 'active' : '' ?>">
+            <ul class="dropdown-academic <?= $isAcademic? "show": '' ?>">
+                <li class="academic-button <?= ($tab == 'courses.php') ? 'active' : '' ?>">
                     <a href="<?= ($currentPage == 'courses.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=courses' ?>">
                         <i class="bi bi-journal-bookmark"></i>
                         <span class="ms-2">Courses</span>
                     </a>
                 </li>
-                <li class="academic-button <?= ($currentPage == 'subjects.php') ? 'active' : '' ?>">
+                <li class="academic-button <?= ($tab == 'subjects.php') ? 'active' : '' ?>">
                     <a href="<?= ($currentPage == 'subjects.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=subjects' ?>">
                         <i class="bi bi-book"></i>
                         <span class="ms-2">Subjects</span>
                     </a>
                 </li>
-                <li class="academic-button <?= ($currentPage == 'schedules.php') ? 'active' : '' ?>">
+                <li class="academic-button <?= ($tab == 'schedules.php') ? 'active' : '' ?>">
                     <a href="<?= ($currentPage == 'schedules.php') ? '#' : $baseURL. '/modules/academic/academic.php?tab=schedules' ?>">
-                    <i class="bi bi-calendar"></i>
-                    <span class="ms-2">Schedules</span>
-                </a>
-            </li>
+                        <i class="bi bi-calendar"></i>
+                        <span class="ms-2">Schedules</span>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="<?= ($currentPage == 'enrollment.php') ? 'active' : '' ?>">
@@ -82,16 +85,26 @@ $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
                 <span class="link-name">Attendance</span>
             </a>
         </li>
-        <li class="accounting-button">
+        <li class="accounting-button <?= ($currentPage == 'accounting.php') ? 'active' : '' ?>">
             <input type="checkbox" id="accounting-clicked">
             <label for="accounting-clicked" class="accounting-link">
                 <i class="bi bi-currency-dollar"></i>
                 <span>Accounting Management</span>
                 <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
             </label>
-            <ul class="dropdown-accounting">
-                <li><a href="#">Payment</a></li>
-                <li><a href="#">Fee Structure</a></li>
+            <ul class="dropdown-accounting <?= $isAccounting? "show": '' ?>">
+                <li>
+                    <a href="<?= ($currentPage == 'accounting.php') ? '#' : $baseURL. '/modules/accounting/accounting.php' ?>">
+                        <i class="bi bi-currency-dollar"></i>
+                        <span class="ms-2">Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-list-nested"></i>
+                        <span class="ms-2">Fee Structure</span>
+                    </a>
+                </li>
             </ul>
         </li>
         <li>

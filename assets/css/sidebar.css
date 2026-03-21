@@ -65,11 +65,13 @@ header{
 .nav-links li:hover{
     background-color: var(--toggle-color);
 }
-.nav-links li.active{
+.nav-links > li.active {
     background-color: var(--sidebar-bg-color);
-    a{
-        color: #0d6efd;
-    }
+}
+
+.nav-links > li.active > a,
+.nav-links > li.active > label {
+    color: #0d6efd;
 }
 .link-name{
     margin-left: 5px;
@@ -87,11 +89,23 @@ header{
     list-style: none;
     display: none;
 }
+.dropdown-academic.show{
+    display: block;
+}
 .academic-button input:checked ~ .dropdown-academic{
     display: block;
 }
 .academic-link{
     font-size: 14px;
+}
+.academic-button.active > label{
+    color: #0d6efd;
+}
+.dropdown-academic li.active{
+    background-color: var(--sidebar-bg-color);
+}
+.dropdown-academic li.active a{
+    color: #0d6efd;
 }
 .accounting-button input{
     display: none;
@@ -100,16 +114,14 @@ header{
     list-style: none;
     display: none;
 }
+.dropdown-accounting.show{
+    display: block;
+}
 .accounting-button input:checked ~ .dropdown-accounting{
     display: block;
 }
 .accounting-link{
     font-size: 14px;
-}
-.active a {
-    pointer-events: none;
-    opacity: 0.6;
-    cursor: default;
 }
 .sidebar-footer{
     width: 100%;
