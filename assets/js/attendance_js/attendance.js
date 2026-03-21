@@ -1,0 +1,1 @@
+alert('Attendance records initialized.');

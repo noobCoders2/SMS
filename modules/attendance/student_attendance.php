@@ -1,27 +1,26 @@
 <!--Course Content-->
 <div class="p-2 rounded m-3">
-    <div class="mx-3 shadow-sm mt-2 p-4 academic-container">
+    <div class="mx-3 shadow-sm p-2 academic-container">
         <div class="search-container">
             <i class="bi bi-search"></i>
             <input type="text" class="form-control" placeholder="Search students...">
         </div>
 
         <!--Placeholder for table-->
-        <table class="academic-table container my-3 px-3">
+        <table class="employee_table_attendance container my-3 px-3">
             <thead>
                 <tr class="header-row">
-                    <th>Course Code</th>
-                    <th>Course Name</th>
-                    <th>Department</th>
-                    <th>Total Units</th>
-                    <th>Years</th>
-                    <th>Actions</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time In</th>
+                    <th>Time Out</th>
+                    <th>Status</th>
+                    <th>Remarks</th>
                 </tr>
             </thead>
-            <tbody id="student_attendance-container">
+            <tbody id="table-container">
 
             </tbody>
         </table>
     </div>
 </div>
-<script type="module" src="../../assets/js/courses_table_data.js"></script>

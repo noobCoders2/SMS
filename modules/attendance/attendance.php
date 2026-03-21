@@ -50,6 +50,12 @@ $tab = $_GET['tab'] ?? 'student_attendance';
             </a>
 
         </div>
+
+        <div class="row g-2 mb-1 p-3 status_grade">
+                <!-- Status cards will be here -->
+
+            </div>
+
         <div class="academic-content">
             <?php
             switch ($tab) {
@@ -64,6 +70,9 @@ $tab = $_GET['tab'] ?? 'student_attendance';
             ?>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script  type="module" src="../../assets/js/status_Card_grade.js"></script>
 </body>
 
 </html>
