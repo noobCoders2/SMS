@@ -55,18 +55,18 @@ body {
   margin-bottom: var(--spacing-md);
   border: none;
 }
-.btn-primary {
+/* .btn-primary {
   background: var(--primary-color);
   border: none;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: 8px;
   color: white;
   transition: var(--tran-03);
-}
-.btn-primary:hover {
+} */
+/* .btn-primary:hover {
   background: color-mix(in srgb, var(--primary-color) 90%, black);
   transform: translateY(-1px);
-}
+} */
 h1, h2, h3 {
   color: var(--primary-color);
   margin-bottom: var(--spacing-sm);
@@ -74,4 +74,12 @@ h1, h2, h3 {
 p {
   color: var(--text-color);
   line-height: 1.6;
+}
+.btn-blue{
+    background-color: #0d6efd;
+    color: white;
+}
+.btn-blue:hover{
+    background-color: #0663ee;
+    color: white;
 }
