@@ -42,36 +42,35 @@
             </div>
         </div>
 
-        <!-- Table Student Management -->
-        <div class="container-fluid">
-            <div class="card shadow-sm border-0">
-                <div class="card-body">
-                    <div class="search-container">
-                        <i class="bi bi-search"></i>
-                        <input type="text" class="form-control" placeholder="Search students...">
-                    </div>
 
-                    <table class="table table-hover align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Student ID</th>
-                                <th>Last Name</th>
-                                <th>First Name</th>
-                                <th>Program</th>
-                                <th>Year</th>
-                                <th>Status</th>
-                                <th class="text-center">Actions</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
-
+        <!--Student Management-->
+        <div class="p-2 rounded m-3 student-container">
+            <div class="mx-3 p-2 ">
+                <div class="search-container">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="form-control" placeholder="Search students...">
                 </div>
+
+                <!--Placeholder for table-->
+                <table class="student_table container my-3 px-3">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Program</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </div>
         </div>
+
     </section>
 
     <!-- Bootstrap JS  -->

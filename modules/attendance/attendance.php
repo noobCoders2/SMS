@@ -17,6 +17,7 @@ $tab = $_GET['tab'] ?? 'student_attendance';
     <link href="../../assets/css/sidebar.css" rel="stylesheet">
     <link href="../../assets/css/navbar.css" rel="stylesheet">
     <link href="../../assets/css/footer.css" rel="stylesheet">
+    <link href="../../assets/css/attendance.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,12 +41,12 @@ $tab = $_GET['tab'] ?? 'student_attendance';
         <div class="attendance-action d-flex align-items-center m-3 p-3 gap-2">
 
             <a href="?tab=student_attendance"
-                class="btn <?= ($tab == 'student_attendance') ? 'btn-primary' : 'btn-light' ?>">
+                class="btn <?= ($tab == 'student_attendance') ? 'btn-light' : 'btn-primary' ?>">
                 Student Attendance
             </a>
 
             <a href="?tab=employee_attendance"
-                class="btn <?= ($tab == 'employee_attendance') ? 'btn-primary' : 'btn-light' ?>">
+                class="btn <?= ($tab == 'employee_attendance') ? 'btn-light' : 'btn-primary' ?>">
                 Employee Attendance
             </a>
 
@@ -53,10 +54,8 @@ $tab = $_GET['tab'] ?? 'student_attendance';
 
         <div class="row g-2 mb-1 p-3 status_grade">
                 <!-- Status cards will be here -->
-
             </div>
 
-        <div class="academic-content">
             <?php
             switch ($tab) {
                 case 'employee_attendance':
@@ -68,11 +67,11 @@ $tab = $_GET['tab'] ?? 'student_attendance';
                     break;
             }
             ?>
-        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script  type="module" src="../../assets/js/status_Card_grade.js"></script>
+
 </body>
 
 </html>

@@ -36,8 +36,8 @@
         <!--Main Content-->
         <div class="shadow-sm p-3 rounded m-3 employee-container">
             <div class="mx-3">
-                <div class="input-group pt-3">               
-                    <i class="bi bi-search input-group-text"></i>
+                <div class="search-container">               
+                    <i class="bi bi-search "></i>
                     <input type="search" name="search" id="employee-search" class="form-control py-2" placeholder="Search employees by name, ID, or Department">
                 </div>
 

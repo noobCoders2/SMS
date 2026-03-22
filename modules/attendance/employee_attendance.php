@@ -1,9 +1,9 @@
 <!--Course Content-->
-<div class="p-2 rounded m-3">
-    <div class="mx-3 shadow-sm p-2 academic-container">
+<div class="p-2 rounded m-3 attendance-container">
+    <div class="mx-3 p-2 ">
         <div class="search-container">
             <i class="bi bi-search"></i>
-            <input type="text" class="form-control" placeholder="Search students...">
+            <input type="text" class="form-control" placeholder="Search employees...">
         </div>
 
         <!--Placeholder for table-->
@@ -24,3 +24,4 @@
         </table>
     </div>
 </div>
+<script type="module" src="../../assets/js/employeeAttendance.js"></script>

@@ -26,11 +26,26 @@ th, td{
     background-color: #0663ee;
     color: white;
 }
-#course-search::placeholder{
-    color: gray;
-    opacity: 70%;
-    font-size: 15px;
+
+.search-container1 {
+    position: relative;
+    width: 100%;
 }
+
+.search-container1 input {
+    padding-left: 35px;
+}
+
+.search-container1 i {
+    position: absolute;
+    top: 61%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 10;
+    pointer-events: none;
+}
+
 .status-text{
     padding: 3px 8px 3px 8px;
     border-radius: 10px;

@@ -4,8 +4,8 @@
         <button class="btn btn-blue mx-1 px-4 py-2"><i class="bi bi-plus me-2 fs-5"></i>Add Subject</button>
     </div>
     <div class="mx-3 shadow-sm mt-2 p-4 academic-container">
-        <div class="input-group pt-3">               
-            <span class="bi bi-search input-group-text"></span>
+        <div class="input-group pt-3 search-container1">               
+            <i class="bi bi-search"></i>
             <input type="search" name="search" id="course-search" class="form-control py-2" placeholder="Search subject...">
         </div>
 

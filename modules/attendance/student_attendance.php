@@ -1,13 +1,12 @@
 <!--Course Content-->
-<div class="p-2 rounded m-3">
-    <div class="mx-3 shadow-sm p-2 academic-container">
+<div class="p-2 rounded m-3 attendance-container">
+    <div class="mx-3 p-2 ">
         <div class="search-container">
             <i class="bi bi-search"></i>
             <input type="text" class="form-control" placeholder="Search students...">
         </div>
-
         <!--Placeholder for table-->
-        <table class="employee_table_attendance container my-3 px-3">
+        <table class="student_table_attendance container my-3 px-3">
             <thead>
                 <tr class="header-row">
                     <th>Name</th>
@@ -24,3 +23,4 @@
         </table>
     </div>
 </div>
+<script type="module" src="../../assets/js/attendance.js"></script>
