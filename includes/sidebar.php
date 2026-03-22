@@ -107,8 +107,8 @@ $isAccounting = ($currentPage == 'accounting.php')
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="">
+        <li class="<?= ($currentPage == 'payroll.php')? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'payroll.php')? '#' : $baseURL. '/modules/payroll/payroll.php'?>">
                 <i class="bi bi-wallet"></i>
                 <span>Payroll</span>
             </a>
