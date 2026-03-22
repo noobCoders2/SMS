@@ -1,0 +1,14 @@
+.report-card {
+  border-radius: 12px;
+}
+
+.report-item {
+  padding: 8px 5px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.report-item:last-child {
+  border-bottom: none;
+}

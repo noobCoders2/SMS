@@ -113,8 +113,8 @@ $isAccounting = ($currentPage == 'accounting.php')
                 <span>Payroll</span>
             </a>
         </li>
-        <li>
-            <a href="">
+        <li class="<?= ($currentPage =='report.php') ? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'report.php') ? '#' : $baseURL. '/modules/reports/reports.php' ?>">
                 <i class="bi bi-file-earmark-text"></i>
                 <span>Reports</span>
             </a>
