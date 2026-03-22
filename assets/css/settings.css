@@ -1,0 +1,56 @@
+.boxes{
+    height: 100%;
+    padding: 25px;
+}
+.management-buttons button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+}
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+.toggle-button input {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #ccc;
+    inset: 0;
+    transition: 0.3s;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+#twofa-toggle:checked + .slider{
+    background-color: #0d6efd;
+}
+#twofa-toggle:checked + .slider::before{
+    transform: translateX(24px);
+}
+.system-containers{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.system-containers p{
+    padding: 0;
+    margin-bottom: 0;
+}

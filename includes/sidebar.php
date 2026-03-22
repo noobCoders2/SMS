@@ -119,8 +119,8 @@ $isAccounting = ($currentPage == 'accounting.php')
                 <span>Reports</span>
             </a>
         </li>
-        <li>
-            <a href="">
+        <li class="<?= ($currentPage == 'settings.php')? 'active' : '' ?>">
+            <a href="<?= ($currentPage == 'settings.php')? '#' : $baseURL.'/modules/settings/settings.php' ?>">
                 <i class="bi bi-gear"></i>
                 <span>System Settings</span>
             </a>
