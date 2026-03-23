@@ -100,7 +100,7 @@ $isAccounting = ($currentPage == 'accounting.php')
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?= ($currentPage == 'fee_structure.php') ? '#' : $baseURL. '/modules/accounting/fee_structure.php' ?>">
                         <i class="bi bi-list-nested"></i>
                         <span class="ms-2">Fee Structure</span>
                     </a>
