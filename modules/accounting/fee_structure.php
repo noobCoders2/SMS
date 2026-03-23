@@ -39,37 +39,50 @@
         </div>
 
         <!--Main Content-->
-        <div class="d-flex flex-column align-content-center shadow-sm p-3 rounded mx-3 fee-container">
-            <div class="mx-3">
-                <div class="pt-2">
-                    <h5>Fee Structures</h5>
-                </div>
-                <div class="search-container">               
-                    <i class="bi bi-search"></i>
-                    <input type="search" name="search" id="fee-search" class="form-control py-2" placeholder="Search by program, semester...">
-                </div>
-                <!--Placeholder for table-->
-                <table class="payment-table container my-3 px-3">
-                    <thead>
-                        <tr class="header-row">
-                            <th>Program</th>
-                            <th>Year Level</th>
-                            <th>Semester</th>
-                            <th>School Year</th>
-                            <th>Tuition/Unit</th>
-                            <th>Misc. Fees</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-container">
+        <div class="container">
+            <div class="row g-3 align-items-stretch container mb-3">
+                <!-- for the table -->
+                <div class="col-12 ">
+                    <div class="shadow-sm p-3 rounded fee-container h-100">
                         
-                    </tbody>
-                </table>
+                        <h5 class="mb-3">Fee Structures</h5>
+                        <div class="search-container mb-3">               
+                            <i class="bi bi-search"></i>
+                            <input type="search" id="fee-search" class="form-control" placeholder="Search by program, semester...">
+                        </div>
+                        <div>
+                            <table class="container mb-0">
+                                <thead>
+                                    <tr class="header-row">
+                                        <th>Program</th>
+                                        <th>Year Level</th>
+                                        <th>Semester</th>
+                                        <th>School Year</th>
+                                        <th>Tuition/Unit</th>
+                                        <th>Misc. Fees</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-container"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="programContainer shadow-sm p-3 rounded " id="programContainer"></div>
+                </div>
+                
+                <div class="col-6">
+                    <div class="programContainer shadow-sm p-3 rounded " id="program2Container"></div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <script type="module" src="../../assets/js/fee_structures_table.js"></script>
     <script type="module" src="../../assets/js/payment_card_data.js"></script>
+    <script type="module" src="../../assets/js/misc_info.js"></script>
 </body>
 </html>
