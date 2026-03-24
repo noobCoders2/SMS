@@ -34,4 +34,5 @@
     <!-- Custom JS -->
     <script src="./assets/js/footer_year.js"></script>
 
+</body>
 </html>
