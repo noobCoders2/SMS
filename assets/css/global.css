@@ -42,9 +42,11 @@ body {
   margin-left: 250px;
   padding: 0 0 20px 30px;
   min-height: 100vh;
-  width: auto;
   background: var(--body-colors);
   transition: var(--tran-04);
+}
+.main-content .expanded {
+  margin-left: 70px;
 }
 
 /* Dashboard */
