@@ -18,6 +18,8 @@ $isAccounting = ($currentPage == 'accounting.php')
                 <span class="name2">Management System</span>
             </div>
         </div>
+
+        <i class="bi bi-chevron-right toggle-btn" onclick="toggleSidebar()"></i>
     </header>
 
     <ul class="nav-links container-fluid">
@@ -131,3 +133,4 @@ $isAccounting = ($currentPage == 'accounting.php')
         <?php include __DIR__ . '/footer.php' ?>
     </div>
 </div>
+<script src="<?= $baseURL ?>/assets/js/sidebarbtn.js"></script>

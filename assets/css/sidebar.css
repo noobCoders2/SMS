@@ -11,8 +11,38 @@
     background: var(--sidebar-color);
     padding: 10px 0px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: var(--tran-03);
 } 
-
+.sidebar header{
+    position: relative;
+}
+.sidebar header .toggle-btn{
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-weight: bold;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d6efd;
+    border-radius: 5px;
+}
+.sidebar.collapsed {
+  width: 80px;
+}
+.sidebar.collapsed .link-name,
+.sidebar.collapsed .header-text .name,
+.sidebar.collapsed .header-text .name2 {
+    display: none;
+}
+.sidebar.sidebar.collapsed i{
+    font-size: 15px;
+    font-weight: bold;
+}
 .logo-name{
     background: var(--primary-color);
     color: var(--sidebar-color);

@@ -35,30 +35,7 @@
                 </div>
             </div>
             <div class="row mb-4" id="summaryContainer">
-                <!-- <div class="col-md-3">
-                    <div class="summary-card rounded">
-                        <h3>1,250</h3>
-                        <p>Total Students<br><small class="text-success">↑ 8.2% from last month</small></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="summary-card">
-                        <h3>85</h3>
-                        <p>Total Employees<br><small class="text-success">↑ 3.1% from last month</small></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="summary-card">
-                        <h3>₱15.8M</h3>
-                        <p>Total Revenue<br><small class="text-success">↑ 12.5% from last month</small></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="summary-card">
-                        <h3>92.5%</h3>
-                        <p>Attendance Rate<br><small class="text-danger">↓ 2.3% from last month</small></p>
-                    </div>
-                </div> -->
+                <!-- Summary cards will be dynamically inserted here -->
             </div>
             <div class="row g-4 mb-4 mt-2 " id="chartsContainer">
                 <div class="col-12 col-md-10 col-lg-6 col-xl-6">
