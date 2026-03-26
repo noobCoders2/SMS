@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --body-colors: #e4e9f7;
+  --body-colors: #0a183d;
   --sidebar-color: #fff;
   --primary-color: #0d6efd;
   --primary-color-light: #f6f5ff;
@@ -40,7 +40,7 @@ body {
 /* Main Content */
 .main-content {
   margin-left: 250px;
-  padding: 0 0 0 30px;
+  padding: 0 0 20px 30px;
   min-height: 100vh;
   background: var(--body-colors);
   transition: var(--tran-04);
@@ -55,18 +55,6 @@ body {
   margin-bottom: var(--spacing-md);
   border: none;
 }
-/* .btn-primary {
-  background: var(--primary-color);
-  border: none;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: 8px;
-  color: white;
-  transition: var(--tran-03);
-} */
-/* .btn-primary:hover {
-  background: color-mix(in srgb, var(--primary-color) 90%, black);
-  transform: translateY(-1px);
-} */
 h1, h2, h3 {
   color: var(--primary-color);
   margin-bottom: var(--spacing-sm);
