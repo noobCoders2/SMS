@@ -35,14 +35,21 @@
     padding: 10px 0px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: var(--tran-03);
+    overflow-y: auto;
+    scrollbar-width: none;
+    scrollbar-color: #fffdfd #f1f1f1;
+    scroll-behavior: smooth;
 } 
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
 .sidebar header{
     position: relative;
 }
 .sidebar header .toggle-btn{
-    position: absolute;
-    top: 60%;
-    right: -10px;
+    position: fixed;
+    top: 19%;
+    left: 270px; 
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 18px;
@@ -55,11 +62,21 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    z-index: 1000;
+    z-index:  99999;
+    transition: var(--tran-03);
 }
 .sidebar.collapsed {
   width: 80px;
 }
+.sidebar.collapsed header .toggle-btn{
+    left: 70px;
+}
+.sidebar.collapsed .nav-links li,
+.sidebar.collapded .nav-links li a img{
+display: flex;
+align-items: center;
+justify-content: center;
+} 
 .sidebar.collapsed .link-name,
 .sidebar.collapsed .header-text .name,
 .sidebar.collapsed .header-text .name2 {
@@ -112,11 +129,23 @@ header{
     text-decoration: none;
     font-size: 14px;
     color: black;
+    display: flex;
+    align-items: center;
 }
 .nav-links li{
     padding: 8px !important;
     border-radius: 15px;
     margin: 3px 0px;
+}
+.nav-links li a img,
+.nav-links li label img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 100;
+    height: 15px;
+    width: 15px;
 }
 .nav-links li:hover{
     background-color: var(--toggle-color);

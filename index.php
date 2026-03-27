@@ -1,6 +1,5 @@
-        <?php include('../../includes/head.php'); ?>
-        <?php include('./includes/sidebar.php'); ?>
-
+<?php include('./includes/head.php'); ?>
+<?php include('./includes/sidebar.php'); ?>
         <!-- Main Content -->
         <div class="container-fluid px-3 px-md-4 main-content w-100" id="mainContent">
             <!-- Navbar -->
@@ -63,7 +62,7 @@
                 </div>
             </div>
         </div>
-<?php include('../../includes/_footer.php'); ?>
+<?php include('./includes/_footer.php'); ?>
 
 
     

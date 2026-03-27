@@ -1,4 +1,5 @@
 <?php
+
 $currentPage = basename($_SERVER['PHP_SELF']);
 $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
 $tab = $_GET['tab'] ?? '';
@@ -25,25 +26,25 @@ $isAccounting = ($currentPage == 'accounting.php')
     <ul class="nav-links container-fluid">
         <li class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">
             <a href="<?= ($currentPage == 'index.php') ? '#' : $baseURL . '/index.php' ?>">
-                <i class="bi bi-columns"></i>
+                <img src="<?= $baseURL ?>assets/icon/dashboard.png" alt="Dashboard">
                 <span class="link-name">Dashboard</span>
             </a>
         </li>
         <li class="<?= ($currentPage == 'student.php') ? 'active' : '' ?>">
             <a href="<?= ($currentPage == 'student.php') ? '#' : $baseURL . '/modules/student/student.php' ?>">
-                <i class="bi bi-people"></i>
+                <img src="<?= $baseURL ?>assets/icon/user.png" alt="Student">
                 <span class="link-name">Student Management</span>
             </a>
         </li>
         <li class="<?= ($currentPage == 'employee.php') ? 'active' : '' ?>">
             <a href="<?= ($currentPage == 'employee.php') ? '#' : $baseURL . '/modules/employee/employee.php' ?>">
-                <i class="bi bi-person-fill-gear"></i>
+                <img src="<?= $baseURL ?>assets/icon/business-and-finance.png" alt="">
                 <span class="link-name">Employee Management</span>
             </a>
         </li>
         <li class="academic-button <?= ($currentPage == 'academic.php') ? 'active' : '' ?>">
             <input type="checkbox" id="academic-clicked">
-            <label for="academic-clicked" class="academic-link">
+            <label for="academic-clicked" class="academic-link d-flex align-items-center">
                 <i class="bi bi-book"></i>
                 <span class="link-name">Academic Management</span>
                 <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
