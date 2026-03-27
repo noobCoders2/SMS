@@ -7,7 +7,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <!--  Search -->
         <div class="search-container">
             <i class="bi bi-search"></i>
-            <input type="text" class="form-control" placeholder="Search students...">
+            <input type="text" class="form-control w-50" placeholder="Search students...">
         </div>
 
     

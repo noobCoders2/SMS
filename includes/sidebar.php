@@ -133,4 +133,4 @@ $isAccounting = ($currentPage == 'accounting.php')
         <?php include __DIR__ . '/footer.php' ?>
     </div>
 </div>
-<script src="<?= $baseURL ?>/assets/js/sidebarbtn.js"></script>
+<script type="module" src="<?= $baseURL ?>/assets/js/sidebarbtn.js"></script>

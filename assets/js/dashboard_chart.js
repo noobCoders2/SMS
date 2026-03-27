@@ -1,4 +1,12 @@
 import { summaryCards } from "./data/dashboard_data.js"; 
+import { toggleSidebar } from "./sidebarbtn.js";
+
+const mainContent = document.querySelector('.main-content');
+
+function toggleSidebar(){
+  mainContent.classList.toggle("expandend");
+}
+
 
 // Summary Cards
 const summaryContainer = document.getElementById("summaryContainer");
