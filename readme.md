@@ -1,10 +1,9 @@
 # Project Title: School Management System
 
-// Sa  AUTHENTICATION so login.php
-//So iba sa modules lalo like dashboard, student management
-# Problem:
+# Problem: Standby
 
-**different Browser need to fix css**
+`Css and JS need to fix`:
+`Testing `
 
 
 

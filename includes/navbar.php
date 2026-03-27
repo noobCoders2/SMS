@@ -5,9 +5,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
         <!--  Search -->
-        <div class="search-container">
+        <div class="search-container w-50">
             <i class="bi bi-search"></i>
-            <input type="text" class="form-control w-50" placeholder="Search students...">
+            <input type="text" class="form-control w-100" placeholder="Search students...">
         </div>
 
     
