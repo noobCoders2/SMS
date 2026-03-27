@@ -39,14 +39,14 @@ body {
 
 /* Main Content */
 .main-content {
-  margin-left: 250px;
+  margin-left: 257px;
   padding: 0 0 20px 30px;
   height: 100vh;
   background: var(--body-colors);
-  transition: var(--tran-04);
+  transition: var(--tran-03);
 }
 .main-content.expanded {
-  margin-left: 30px;
+  margin-left: 58px;
 }
 
 /* Dashboard */

@@ -1,3 +1,26 @@
+:root {
+  /* Colors */
+  --body-colors: #0a183d;
+  --sidebar-color: #fff;
+  --primary-color: #0d6efd;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --sidebar-bg-color: #Eff6ff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  /* Transitions */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
 .logo-details {
     display: flex;
     align-items: center;

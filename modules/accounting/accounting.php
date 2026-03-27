@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,64 +16,70 @@
     <link href="../../assets/css/footer.css" rel="stylesheet">
     <link href="../../assets/css/payment.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Sidebar -->
-    <?php include('../../includes/sidebar.php') ?>
-    <section class="main-content d-flex flex-column">       
-        <!-- NavBar -->
-        <?php include('../../includes/navbar.php')?>
-        <!--Header-->
-        <div class="payment-header d-flex flex-row justify-content-between mx-3 my-2 p-3">
-            <div class="payment-title">
-                <h4>Accounting & Finance</h4>
-                <p>Manage payments and financial transactions</p>
-            </div>
-            <div class="payment-action d-flex align-items-center">
-                <a class="btn btn-light mx-1 px-4 py-2"><i class="bi bi-download me-2"></i>Export</a>
-                <button class="btn btn-blue mx-1 px-4 py-2"><i class="bi bi-plus me-2 fs-5"></i>Record Payment</button>
-            </div>
-        </div>
+    <div class="d-flex main_Content_page">
+        <?php include('../../includes/sidebar.php'); ?>
 
-        <!--For the cards-->
-        <div class="row g-2 mb-2 px-3 paymentCards container">
-            
-        </div>
 
-        <!--Main Content-->
-        <div class="d-flex flex-column align-content-center shadow-sm p-3 rounded mx-3 payment-container">
-            <div class="mx-3">
-                <div class="pt-2">
-                    <h5>Payment Transactions</h5>
+        <div class="container-fluid px-3 px-md-4 main-content w-100" id="mainContent">
+            <!-- Navbar -->
+            <?php include('../../includes/navbar.php'); ?>
+
+            <div class="payment-header d-flex flex-row justify-content-between mx-3 my-2 p-3">
+                <div class="payment-title">
+                    <h4>Accounting & Finance</h4>
+                    <p>Manage payments and financial transactions</p>
                 </div>
-                <div class="search-container">               
-                    <i class="bi bi-search"></i>
-                    <input type="search" name="search" id="payment-search" class="form-control py-2" placeholder="Search payments by Or number, student name...">
+                <div class="payment-action d-flex align-items-center">
+                    <a class="btn btn-light mx-1 px-4 py-2"><i class="bi bi-download me-2"></i>Export</a>
+                    <button class="btn btn-blue mx-1 px-4 py-2"><i class="bi bi-plus me-2 fs-5"></i>Record Payment</button>
                 </div>
-                <!--Placeholder for table-->
-                <table class="payment-table container my-3 px-3">
-                    <thead>
-                        <tr class="header-row">
-                            <th>OR Number</th>
-                            <th>Student Name</th>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Type</th>
-                            <th>Method</th>
-                            <th>Semester</th>
-                            <th>School Year</th>
-                            <th>Status</th>
-                            <th>Received By</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-container">
-                        
-                    </tbody>
-                </table>
+            </div>
+
+            <!--For the cards-->
+            <div class="row g-2 mb-2 px-3 paymentCards container">
+
+            </div>
+
+            <div class="d-flex flex-column align-content-center shadow-sm p-3 rounded mx-3 payment-container">
+                <div class="mx-3">
+                    <div class="pt-2">
+                        <h5>Payment Transactions</h5>
+                    </div>
+                    <div class="search-container">
+                        <i class="bi bi-search"></i>
+                        <input type="search" name="search" id="payment-search" class="form-control py-2" placeholder="Search payments by Or number, student name...">
+                    </div>
+                    <!--Placeholder for table-->
+                    <table class="payment-table container my-3 px-3">
+                        <thead>
+                            <tr class="header-row">
+                                <th>OR Number</th>
+                                <th>Student Name</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>Method</th>
+                                <th>Semester</th>
+                                <th>School Year</th>
+                                <th>Status</th>
+                                <th>Received By</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
 
     <script type="module" src="../../assets/js/payment_table.js"></script>
     <script type="module" src="../../assets/js/payment_card_data.js"></script>
+    <script src="<?= $baseURL ?>/assets/js/sidebarbtn.js"></script>
 </body>
+
 </html>

@@ -18,12 +18,14 @@
 </head>
 
 <body>
-    <!-- Sidebar -->
-    <?php include('../../includes/sidebar.php') ?>
-        <!-- NavBar -->
-        
-        <section class="main-content">
-        <?php include('../../includes/navbar.php') ?>
+
+    <div class="d-flex main_Content_page">
+        <?php include('../../includes/sidebar.php'); ?>
+
+
+        <div class="container-fluid px-3 px-md-4 main-content w-100" id="mainContent">
+            <!-- Navbar -->
+            <?php include('../../includes/navbar.php'); ?>
 
             <!--Header-->
             <div class="employee-header d-flex flex-row justify-content-between m-3 p-3">
@@ -35,14 +37,7 @@
                     <button class="btn btn-blue mx-1 px-4 py-2 btn-primary"><i class="bi bi-plus me-2 fs-5"></i>New Enrollment</button>
                 </div>
             </div>
-
-            <!-- Status Card -->
-            <div class="row g-2 mb-1 p-3 status_grade">
-                <!-- Status cards will be here -->
-
-            </div>
-
-                <!-- Table Enrollment -->
+            
             <div class="container-fluid">
                 <div class="card shadow-sm border-1">
                     <div class="card-body">
@@ -74,8 +69,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script  type="module" src="../../assets/js/status_Card_grade.js"></script>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../../assets/js/status_Card_grade.js"></script>
+    <script src="<?= $baseURL ?>/assets/js/sidebarbtn.js"></script>
 </body>
+
 </html>
