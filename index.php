@@ -1,3 +1,4 @@
+<?php $title = "Dashboard";?>
 <?php include('./includes/head.php'); ?>
 <?php include('./includes/sidebar.php'); ?>
         <!-- Main Content -->

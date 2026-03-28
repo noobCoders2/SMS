@@ -1,4 +1,5 @@
 <?php
+$title = "Academic";
 $tab = $_GET['tab'] ?? 'courses';
 ?>
 

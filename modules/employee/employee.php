@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../../assets/css/global.css" rel="stylesheet">
-    <link href="../../assets/css/sidebar.css" rel="stylesheet">
-    <link href="../../assets/css/navbar.css" rel="stylesheet">
-    <link href="../../assets/css/footer.css" rel="stylesheet">
-    <link href="../../assets/css/employee.css" rel="stylesheet">
-</head>
+<?php 
+    $link_css = $baseURL."assets/css/employee.css";
+    $title = "Employee";
+    $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
 
-<body>
-    <div class="d-flex main_Content_page">
-        <?php include('../../includes/sidebar.php'); ?>
+        ?>
+        <?php include($baseURL. 'includes/head.php'); ?>
+        <?php include($baseURL. 'includes/sidebar.php'); ?>
 
 
         <div class="container-fluid px-3 px-md-4 main-content w-100" id="mainContent">

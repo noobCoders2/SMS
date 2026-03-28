@@ -2,6 +2,7 @@
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <nav class="navbar bg-white px-4 py-2">
+    
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
         <!--  Search -->

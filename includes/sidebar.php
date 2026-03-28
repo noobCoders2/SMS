@@ -4,12 +4,11 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 $baseURL = '/' . explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
 $tab = $_GET['tab'] ?? '';
 $isAcademic = ($currentPage == 'academic.php');
-$isAccounting = ($currentPage == 'accounting.php')
+$isAccounting = ($currentPage == 'accounting.php');
 ?>
-
-<div class="sidebar">
-    <!-- Header of Sidebar -->
-    <header class="logo-details d-flex align-items-center">
+<aside class="sidebar">
+    <!-- Sidebar Header -->
+    <header class="sidebar-header">
         <div class="logo-container">
             <img src="/StudentManagementSystem/assets/images/ericson.jpg" alt="ericson" class="img-icon">
         </div>
@@ -19,118 +18,160 @@ $isAccounting = ($currentPage == 'accounting.php')
                 <span class="name2">Management System</span>
             </div>
         </div>
-
-        <i class="bi bi-chevron-right toggle-btn" onclick="toggleSidebar()"></i>
+        <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">chevron_left</span>
+        </button>
     </header>
 
-    <ul class="nav-links container-fluid">
-        <li class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'index.php') ? '#' : $baseURL . '/index.php' ?>">
-                <img src="<?= $baseURL ?>assets/icon/dashboard.png" alt="Dashboard">
-                <span class="link-name">Dashboard</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'student.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'student.php') ? '#' : $baseURL . '/modules/student/student.php' ?>">
-                <img src="<?= $baseURL ?>assets/icon/user.png" alt="Student">
-                <span class="link-name">Student Management</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'employee.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'employee.php') ? '#' : $baseURL . '/modules/employee/employee.php' ?>">
-                <img src="<?= $baseURL ?>assets/icon/business-and-finance.png" alt="">
-                <span class="link-name">Employee Management</span>
-            </a>
-        </li>
-        <li class="academic-button <?= ($currentPage == 'academic.php') ? 'active' : '' ?>">
-            <input type="checkbox" id="academic-clicked">
-            <label for="academic-clicked" class="academic-link d-flex align-items-center">
-                <i class="bi bi-book"></i>
-                <span class="link-name">Academic Management</span>
-                <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
-            </label>
-            <ul class="dropdown-academic <?= $isAcademic ? "show" : '' ?>">
-                <li class="academic-button <?= ($tab == 'courses.php') ? 'active' : '' ?>">
-                    <a href="<?= ($currentPage == 'courses.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=courses' ?>">
-                        <i class="bi bi-journal-bookmark"></i>
-                        <span class="ms-2">Courses</span>
-                    </a>
-                </li>
-                <li class="academic-button <?= ($tab == 'subjects.php') ? 'active' : '' ?>">
-                    <a href="<?= ($currentPage == 'subjects.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=subjects' ?>">
-                        <i class="bi bi-book"></i>
-                        <span class="ms-2">Subjects</span>
-                    </a>
-                </li>
-                <li class="academic-button <?= ($tab == 'schedules.php') ? 'active' : '' ?>">
-                    <a href="<?= ($currentPage == 'schedules.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=schedules' ?>">
-                        <i class="bi bi-calendar"></i>
-                        <span class="ms-2">Schedules</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="<?= ($currentPage == 'enrollment.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'enrollment.php') ? '#' : $baseURL . '/modules/Enrollment/enrollment.php' ?>">
-                <i class="bi bi-person-plus"></i>
-                <span class="link-name">Enrollment</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'grade.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'grade.php') ? '#' : $baseURL . '/modules/grade_management/grade.php' ?>">
-                <i class="bi bi-file-earmark-text"></i>
-                <span class="link-name">Grade Management</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'attendance.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'attendance.php') ? '#' : $baseURL . '/modules/attendance/attendance.php' ?>">
-                <i class="bi bi-person-check"></i>
-                <span class="link-name">Attendance</span>
-            </a>
-        </li>
-        <li class="accounting-button <?= ($currentPage == 'accounting.php') ? 'active' : '' ?>">
-            <input type="checkbox" id="accounting-clicked">
-            <label for="accounting-clicked" class="accounting-link">
-                <i class="bi bi-currency-dollar"></i>
-                <span>Accounting Management</span>
-                <i class="bi bi-chevron-down dropdown-icon ms-3"></i>
-            </label>
-            <ul class="dropdown-accounting <?= $isAccounting ? "show" : '' ?>">
-                <li>
-                    <a href="<?= ($currentPage == 'accounting.php') ? '#' : $baseURL . '/modules/accounting/accounting.php' ?>">
-                        <i class="bi bi-currency-dollar"></i>
-                        <span class="ms-2">Payment</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= ($currentPage == 'fee_structure.php') ? '#' : $baseURL . '/modules/accounting/fee_structure.php' ?>">
-                        <i class="bi bi-list-nested"></i>
-                        <span class="ms-2">Fee Structure</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="<?= ($currentPage == 'payroll.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'payroll.php') ? '#' : $baseURL . '/modules/payroll/payroll.php' ?>">
-                <i class="bi bi-wallet"></i>
-                <span>Payroll</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'report.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'report.php') ? '#' : $baseURL . '/modules/reports/reports.php' ?>">
-                <i class="bi bi-file-earmark-text"></i>
-                <span>Reports</span>
-            </a>
-        </li>
-        <li class="<?= ($currentPage == 'settings.php') ? 'active' : '' ?>">
-            <a href="<?= ($currentPage == 'settings.php') ? '#' : $baseURL . '/modules/settings/settings.php' ?>">
-                <i class="bi bi-gear"></i>
-                <span>System Settings</span>
-            </a>
-        </li>
-    </ul>
-    <!-- Sidebar Footer -->
-    <div class="sidebar-footer">
-        <?php include __DIR__ . '/footer.php' ?>
-    </div>
-</div>
+    <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'index.php') ? '#' : $baseURL . '/index.php' ?>" class="nav-link">
+                    <span class="material-symbols-rounded">dashboard</span>
+                    <span class="nav-label">Dashboard</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Dashboard</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'student.php') ? '#' : $baseURL . '/modules/student/student.php' ?>" class="nav-link">
+                    <span class="material-symbols-rounded">notifications</span>
+                    <span class="nav-label">Student Management</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Student Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'employee.php') ? '#' : $baseURL . '/modules/employee/employee.php' ?>" class="nav-link">
+                    <span class="material-symbols-rounded">notifications</span>
+                    <span class="nav-label">Employee Management</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Employee Management</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown-container">
+                <a href="#" class="nav-link custom-dropdown-toggle">
+                    <span class="material-symbols-rounded">calendar_today</span>
+                    <span class="nav-label">Academic Management</span>
+                    <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                </a>
+
+                <!-- Dropdown Menu -->
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Academic Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= ($currentPage == 'courses.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=courses' ?>" class="nav-link dropdown-link"><i class="bi bi-journal-bookmark"></i>Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= ($currentPage == 'subjects.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=subjects' ?>" class="nav-link dropdown-link"><i class="bi bi-book"></i>Subjects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= ($currentPage == 'schedules.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=schedules' ?>" class="nav-link dropdown-link"><i class="bi bi-calendar"></i>Schedules</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'enrollment.php') ? '#' : $baseURL . '/modules/Enrollment/enrollment.php' ?>" class="nav-link">
+                    <i class="bi bi-person-plus"></i>
+                    <span class="nav-label">Enrollment</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Enrollment</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'grade.php') ? '#' : $baseURL . '/modules/grade_management/grade.php' ?>" class="nav-link">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span class="nav-label">Grade Management</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Grade Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'attendance.php') ? '#' : $baseURL . '/modules/attendance/attendance.php' ?>" class="nav-link">
+                    <i class="bi bi-person-check"></i>
+                    <span class="nav-label">Attendance</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Attendance</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown-container">
+                <a href="#" class="nav-link custom-dropdown-toggle">
+                    <span class="material-symbols-rounded">star</span>
+                    <span class="nav-label">Accounting Management</span>
+                    <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                </a>
+
+                <!-- Dropdown Menu -->
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Accounting Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= ($currentPage == 'accounting.php') ? '#' : $baseURL . '/modules/accounting/accounting.php' ?>" class="nav-link dropdown-link"><i class="bi bi-currency-dollar"></i>Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= ($currentPage == 'fee_structure.php') ? '#' : $baseURL . '/modules/accounting/fee_structure.php' ?>" class="nav-link dropdown-link"><i class="bi bi-list-nested"></i>Fee Structure</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="material-symbols-rounded">extension</span>
+                    <span class="nav-label">Payroll</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Payroll</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'report.php') ? '#' : $baseURL . '/modules/reports/reports.php' ?>" class="nav-link">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span class="nav-label">Reports</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Reports</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="<?= ($currentPage == 'settings.php') ? '#' : $baseURL . '/modules/settings/settings.php' ?>" class="nav-link">
+                    <span class="material-symbols-rounded">settings</span>
+                    <span class="nav-label">System Settings</span>
+                </a>
+                <ul class="custom-dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">System Settings</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</aside>
