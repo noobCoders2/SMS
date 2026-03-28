@@ -28,7 +28,7 @@ $isAccounting = ($currentPage == 'accounting.php');
         <ul class="nav-list primary-nav">
             <li class="nav-item">
                 <a href="<?= ($currentPage == 'index.php') ? '#' : $baseURL . '/index.php' ?>" class="nav-link">
-                    <span class="material-symbols-rounded">dashboard</span>
+                    <i class="bi bi-columns"></i>
                     <span class="nav-label">Dashboard</span>
                 </a>
                 <ul class="custom-dropdown-menu">
@@ -39,7 +39,7 @@ $isAccounting = ($currentPage == 'accounting.php');
             </li>
             <li class="nav-item">
                 <a href="<?= ($currentPage == 'student.php') ? '#' : $baseURL . '/modules/student/student.php' ?>" class="nav-link">
-                    <span class="material-symbols-rounded">notifications</span>
+                    <i class="bi bi-people"></i>
                     <span class="nav-label">Student Management</span>
                 </a>
                 <ul class="custom-dropdown-menu">
@@ -50,7 +50,7 @@ $isAccounting = ($currentPage == 'accounting.php');
             </li>
             <li class="nav-item">
                 <a href="<?= ($currentPage == 'employee.php') ? '#' : $baseURL . '/modules/employee/employee.php' ?>" class="nav-link">
-                    <span class="material-symbols-rounded">notifications</span>
+                    <i class="bi bi-person-fill-gear"></i>
                     <span class="nav-label">Employee Management</span>
                 </a>
                 <ul class="custom-dropdown-menu">
@@ -62,7 +62,7 @@ $isAccounting = ($currentPage == 'accounting.php');
             <!-- Dropdown -->
             <li class="nav-item dropdown-container">
                 <a href="#" class="nav-link custom-dropdown-toggle">
-                    <span class="material-symbols-rounded">calendar_today</span>
+                    <i class="bi bi-book"></i>
                     <span class="nav-label">Academic Management</span>
                     <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
                 </a>
@@ -120,7 +120,7 @@ $isAccounting = ($currentPage == 'accounting.php');
             <!-- Dropdown -->
             <li class="nav-item dropdown-container">
                 <a href="#" class="nav-link custom-dropdown-toggle">
-                    <span class="material-symbols-rounded">star</span>
+                    <i class="bi bi-currency-dollar"></i>
                     <span class="nav-label">Accounting Management</span>
                     <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
                 </a>
@@ -141,7 +141,7 @@ $isAccounting = ($currentPage == 'accounting.php');
 
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="material-symbols-rounded">extension</span>
+                    <i class="bi bi-wallet"></i>
                     <span class="nav-label">Payroll</span>
                 </a>
                 <ul class="custom-dropdown-menu">
