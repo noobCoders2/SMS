@@ -28,4 +28,4 @@
         </table>
     </div>
 </div>
-<script type="module" src="../../assets/js/courses_table_data.js"></script>
+<script type="module" src="<?= $baseURL ?>/assets/js/courses_table_data.js"></script>

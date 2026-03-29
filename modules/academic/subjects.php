@@ -26,4 +26,4 @@
         </table>
     </div>
 </div>
-<script type="module" src="../../assets/js/subjects_table_data.js"></script>
+<script type="module" src="<?= $baseURL ?>/assets/js/subjects_table_data.js"></script>

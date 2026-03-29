@@ -5,10 +5,6 @@ $title = "Employee Management";
 $link_css = $baseURL . "/assets/css/employee.css";
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/StudentManagementSystem/includes/head.php'); ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/StudentManagementSystem/includes/sidebar.php'); ?>
-
-
 <div class="container-fluid px-3 px-md-4 main-content w-100" id="mainContent">
     <!-- Navbar -->
     <?php include('../../includes/navbar.php'); ?>

@@ -21,7 +21,6 @@ $baseURL = "/StudentManagementSystem";
     <link href="<?= $baseURL ?>/assets/css/sidebar.css" rel="stylesheet">
     <link href="<?= $baseURL ?>/assets/css/navbar.css" rel="stylesheet">
     <link href="<?= $baseURL ?>/assets/css/footer.css" rel="stylesheet">
-    <link href="<?= $baseURL ?>/assets/css/dashboard.css" rel="stylesheet">
 
     <!-- Page CSS -->
     <?php if (isset($link_css)): ?>

@@ -73,13 +73,13 @@ $isAccounting = ($currentPage == 'accounting.php');
                         <a class="nav-link dropdown-title">Academic Management</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?= ($currentPage == 'courses.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=courses' ?>" class="nav-link dropdown-link"><i class="bi bi-journal-bookmark"></i>Courses</a>
+                        <a href="<?= $baseURL ?>/index.php?page=academic&tab=courses" class="nav-link dropdown-link"><i class="bi bi-journal-bookmark"></i>Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?= ($currentPage == 'subjects.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=subjects' ?>" class="nav-link dropdown-link"><i class="bi bi-book"></i>Subjects</a>
+                        <a href="<?= $baseURL ?>/index.php?page=academic&tab=subjects" class="nav-link dropdown-link"><i class="bi bi-book"></i>Subjects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?= ($currentPage == 'schedules.php') ? '#' : $baseURL . '/modules/academic/academic.php?tab=schedules' ?>" class="nav-link dropdown-link"><i class="bi bi-calendar"></i>Schedules</a>
+                        <a href="<?= $baseURL ?>/index.php?page=academic&tab=schedules" class="nav-link dropdown-link"><i class="bi bi-calendar"></i>Schedules</a>
                     </li>
                 </ul>
             </li>
