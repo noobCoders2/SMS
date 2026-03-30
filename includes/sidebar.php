@@ -140,7 +140,7 @@ $isAccounting = ($currentPage == 'accounting.php');
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= ($currentPage == 'payroll.php') ? '#' : $baseURL . '/modules/payroll/payroll.php' ?>" class="nav-link">
                     <i class="bi bi-wallet"></i>
                     <span class="nav-label">Payroll</span>
                 </a>

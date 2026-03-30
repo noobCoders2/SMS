@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management</title>
+    <title>Payroll Management</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -29,7 +29,7 @@
             <div class="payroll-header d-flex flex-row justify-content-between mx-3 my-2 p-3">
                 <div class="payroll-title">
                     <h4>Payroll Management</h4>
-                    <p>Manage employee payroll and compensation</p>
+                    <p>Manage employee's payroll and compensation</p>
                 </div>
                 <div class="payroll-action d-flex align-items-center">
                     <a class="btn btn-light mx-1 px-4 py-2"><i class="bi bi-download me-2"></i>Export Payslips</a>
