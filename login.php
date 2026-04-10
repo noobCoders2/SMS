@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<!-- Copy old code, change this if needed -->
     <div class="main">
 
         <div class="left">
