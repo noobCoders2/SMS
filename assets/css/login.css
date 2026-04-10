@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #1877f2, #f7d046); */
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/Staples_High_School\,_Westport\,_CT.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  padding: 20px;
+}
+.main {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.left {
+  flex: 1;
+  color: white;
+}
+.left h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.card-login {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.card-login input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #1877f2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background: #166fe5;
+}
+.forgot {
+  text-align: center;
+  margin: 12px 0;
+}
+.forgot a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .card-login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 26px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .card-login {
+    padding: 20px;
+  }
+}
