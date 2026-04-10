@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <title>Fee Structure</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+
+        <div class="menu-btn">
+          <i class="ph-bold ph-caret-left"></i>
+        </div>
+        <!-- header Sidebar -->
+        <div class="head">
+          <div class="user-img">
+            <img src="./assets/img/logo.png" alt="" />
+          </div>
+          <div class="user-details">
+            <p class="title">Ericson Academy</p>
+            <p class="name">Management System</p>
+          </div>
+        </div>
+        <!-- main navigation bar -->
+        <div class="nav">
+          <div class="menu">
+            <p class="title">Main</p>
+            <ul>
+              <li class="active">
+                <a href="index.html">
+                  <i class="icon ph-bold ph-squares-four"></i>
+                  <span class="text">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="student.html">
+                  <i class="icon ph-bold ph-student"></i>
+                  <span class="text">Student Management</span>
+                </a>
+              </li>
+              <li>
+                <a href="employee.html">
+                  <i class="icon ph-bold ph-user-list"></i>
+                  <span class="text">Employee Management</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-user-circle-gear"></i>
+                  <span class="text">Academic Management</span>
+                  <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="academic.html">
+                      <span class="text">Courses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text">Subjects</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text">Schedule</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="enrollment.html">
+                  <i class="icon ph-bold ph-user-plus"></i>
+                  <span class="text">Enrollment</span>
+                </a>
+              </li>
+              <li>
+                <a href="grades.html">
+                  <i class="icon ph-bold ph-folder-user"></i>
+                  <span class="text">Grade Management</span>
+                </a>
+              </li>
+              <li>
+                <a href="attendance.html">
+                  <i class="icon ph-bold ph-user-check"></i>
+                  <span class="text">Attendance</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-chart-bar"></i>
+                  <span class="text">Accounting Management</span>
+                  <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="payments.html">
+                      <span class="text">Payment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="fee.html">
+                      <span class="text">Fee Structure</span>
+                    </a>
+                  </li>
+                </ul>
+                <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-paypal-logo"></i>
+                  <span class="text">Payroll</span>
+                </a>
+              </li>
+                <li>
+                <a href="reports.html">
+                  <i class="icon ph-bold ph-trend-up"></i>
+                  <span class="text">Reports</span>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu">
+            <p class="title">System Settings</p>
+            <ul>
+              <li>
+                <a href="setting.html">
+                  <i class="icon ph-bold ph-gear"></i>
+                  <span class="text">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      
+      <div class="main">
+        <div class="top-nav">
+
+          <!-- SEARCH -->
+          <div class="input-top">
+            <i class="ph ph-magnifying-glass search-icon"></i>
+            <input type="text" class="top-input" placeholder="Search students, employees, courses...">
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="top-logo-notify">
+
+            <!-- NOTIFICATION -->
+            <div class="notify-bell">
+              <i class="ph ph-bell-simple"></i>
+              <span class="badge">2</span>
+
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <p>No new notifications</p>
+              </div>
+            </div>
+
+            <!-- USER -->
+            <div class="head-top">
+              <div class="user-img">
+                <img src="./assets/img/logo.png" alt="">
+              </div>
+              <div class="user-details">
+                <p class="title">Super Admin</p>
+                <p class="name">Super Administrator</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        
+        <div class="content">
+
+        <!-- Header -->
+        <div class="header">
+            <div>
+            <h1>Fee Structure Management</h1>
+            <p>Configure and manage tuition and fees</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn">
+                    <i class="ph ph-download-simple"></i> Export
+                </button>
+                <button class="btn primary">
+                        <i class="ph ph-plus"></i> Record Payment
+                </button>
+            </div>
+            
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="card">
+            <p>Total Programs</p>
+            <h2>90</h2>
+            </div>
+
+            <div class="card">
+            <p>Avg/Tuition/Unit</p>
+            <h2 style="color: rgb(0, 17, 255);">₱825</h2>
+            </div>
+
+            <div class="card">
+            <p>Avg Misc Fees</p>
+            <h2 style="color: green;">₱3,250</h2>
+            </div>
+
+            <div class="card">
+            <p>Active SY</p>
+            <h2 style="color: red; font-weight: bold;">2024-2025</h2>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="card">
+            <h3 style="margin-bottom: 10px; margin-top: 10px; font-weight: 500;">Fee Structure</h3>
+            <!-- SEARCH -->
+                <div class="table-header">
+                <i class="ph ph-magnifying-glass search-icon-table"></i>
+                <input 
+                    class="search" 
+                    type="text" 
+                    placeholder="Search students by name, ID, or program..."
+                >
+                </div>
+
+            <table>
+            <thead>
+                <tr>
+                <th>Program</th>
+                <th>Year Level</th>
+                <th>Semester</th>
+                <th>School Year</th>
+                <th>Tution Unit</th>
+                <th>Misc.Fees</th>
+                <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>1st Year</td>
+                <td>1st Semester</td>
+                <td>2024-2025</td>
+                <td>₱850</td>
+                <td>₱3,500</td>
+                <td class="actions-cell">
+                    <i class="ph ph-pencil-simple action-icon edit"></i>
+                    <i class="ph ph-trash action-icon delete"></i>
+                </td>
+                </tr>
+
+                <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>1st Year</td>
+                <td>1st Semester</td>
+                <td>2024-2025</td>
+                <td>₱850</td>
+                <td>₱3,500</td>
+                <td class="actions-cell">
+                    <i class="ph ph-pencil-simple action-icon edit"></i>
+                    <i class="ph ph-trash action-icon delete"></i>
+                </td>
+                </tr>
+
+                <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>1st Year</td>
+                <td>1st Semester</td>
+                <td>2024-2025</td>
+                <td>₱850</td>
+                <td>₱3,500</td>
+                <td class="actions-cell">
+                    <i class="ph ph-pencil-simple action-icon edit"></i>
+                    <i class="ph ph-trash action-icon delete"></i>
+                </td>
+                </tr>
+
+                <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>1st Year</td>
+                <td>1st Semester</td>
+                <td>2024-2025</td>
+                <td>₱850</td>
+                <td>₱3,500</td>
+                <td class="actions-cell">
+                    <i class="ph ph-pencil-simple action-icon edit"></i>
+                    <i class="ph ph-trash action-icon delete"></i>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+
+        </div>
+        <div class="fee-grid">
+            <div class="fee-card">
+
+        <div class="fee-header">
+            <div>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>Year 1 • 1st Semester (2024–2025)</p>
+            </div>
+            <button class="edit-btn">
+            <i class="ph ph-pencil-simple"></i>
+            </button>
+        </div>
+
+        <div class="fee-row highlight">
+            <span>Tuition per Unit</span>
+            <strong>₱850</strong>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fee-section">
+            <p class="section-title">Miscellaneous Fees</p>
+
+            <div class="fee-row">
+            <span>Library Fee</span>
+            <span>₱500</span>
+            </div>
+
+            <div class="fee-row">
+            <span>Laboratory Fee</span>
+            <span>₱2,500</span>
+            </div>
+
+            <div class="fee-row">
+            <span>ID Fee</span>
+            <span>₱200</span>
+            </div>
+
+            <div class="fee-row">
+            <span>Registration Fee</span>
+            <span>₱300</span>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fee-row total">
+            <span>Total Miscellaneous</span>
+            <strong>₱3,500</strong>
+        </div>
+
+        </div>
+
+        <div class="fee-card">
+
+        <div class="fee-header">
+            <div>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>Year 1 • 1st Semester (2024–2025)</p>
+            </div>
+            <button class="edit-btn">
+            <i class="ph ph-pencil-simple"></i>
+            </button>
+        </div>
+
+        <div class="fee-row highlight">
+            <span>Tuition per Unit</span>
+            <strong>₱850</strong>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fee-section">
+            <p class="section-title">Miscellaneous Fees</p>
+
+            <div class="fee-row">
+            <span>Library Fee</span>
+            <span>₱500</span>
+            </div>
+
+            <div class="fee-row">
+            <span>Laboratory Fee</span>
+            <span>₱2,500</span>
+            </div>
+
+            <div class="fee-row">
+            <span>ID Fee</span>
+            <span>₱200</span>
+            </div>
+
+            <div class="fee-row">
+            <span>Registration Fee</span>
+            <span>₱300</span>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fee-row total">
+            <span>Total Miscellaneous</span>
+            <strong>₱3,500</strong>
+        </div>
+
+        </div>
+        </div>
+        
+        </div>
+
+      </div>
+    </div>
+
+    <script src="./assets/js/sidebar.js" ></script>
+  </body>
+</html>
