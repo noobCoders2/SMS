@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ICONS -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./assets/css/global.css" />
-    <title>Sidebar</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-
+<div class="sidebar">
         <div class="menu-btn">
           <i class="ph-bold ph-caret-left"></i>
         </div>
@@ -32,20 +17,20 @@
           <div class="menu">
             <p class="title">Main</p>
             <ul>
-              <li class="active">
-                <a href="#">
+              <li class="<?= uriIs('/StudentManagementSystem/') || uriIs('/StudentManagementSystem/index') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/">
                   <i class="icon ph-bold ph-squares-four"></i>
                   <span class="text">Dashboard</span>
                 </a>
               </li>
-              <li>
-                <a href="student.html">
+              <li class="<?= uriIs('/StudentManagementSystem/student') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/student">
                   <i class="icon ph-bold ph-student"></i>
                   <span class="text">Student Management</span>
                 </a>
               </li>
-              <li>
-                <a href="employee.html">
+              <li class="<?= uriIs('/StudentManagementSystem/employee') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/employee">
                   <i class="icon ph-bold ph-user-list"></i>
                   <span class="text">Employee Management</span>
                 </a>
@@ -58,7 +43,7 @@
                 </a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="academic.html">
+                    <a href="/StudentManagementSystem/academic">
                       <span class="text">Courses</span>
                     </a>
                   </li>
@@ -74,54 +59,54 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="enrollment.html">
+              <li class="<?= uriIs('/StudentManagementSystem/enrollment') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/enrollment">
                   <i class="icon ph-bold ph-user-plus"></i>
                   <span class="text">Enrollment</span>
                 </a>
               </li>
-              <li>
-                <a href="grades.html">
+              <li class="<?= uriIs('/StudentManagementSystem/grades') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/grades">
                   <i class="icon ph-bold ph-folder-user"></i>
                   <span class="text">Grade Management</span>
                 </a>
               </li>
-              <li>
-                <a href="attendance.html">
+              <li class="<?= uriIs('/StudentManagementSystem/attendance') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/attendance">
                   <i class="icon ph-bold ph-user-check"></i>
                   <span class="text">Attendance</span>
                 </a>
               </li>
-              <li>
+              <li class="<?= uriIs('/StudentManagementSystem/payments') || uriIs('/StudentManagementSystem/fee') ? 'active' : '' ?>">
                 <a href="#">
                   <i class="icon ph-bold ph-chart-bar"></i>
                   <span class="text">Accounting Management</span>
                   <i class="arrow ph-bold ph-caret-down"></i>
                 </a>
                 <ul class="sub-menu">
-                  <li>
-                    <a href="payments.html">
+                  <li class="<?= uriIs('/StudentManagementSystem/payments') ? 'active' : '' ?>">
+                    <a href="/StudentManagementSystem/payments">
                       <span class="text">Payment</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="fee.html">
+                  <li class="<?= uriIs('/StudentManagementSystem/fee') ? 'active' : '' ?>">
+                    <a href="/StudentManagementSystem/fee">
                       <span class="text">Fee Structure</span>
                     </a>
                   </li>
                 </ul>
-                <li>
-                <a href="payroll.html">
+              </li>
+              <li class="<?= uriIs('/StudentManagementSystem/payroll') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/payroll">
                   <i class="icon ph-bold ph-paypal-logo"></i>
                   <span class="text">Payroll</span>
                 </a>
               </li>
-                <li>
-                <a href="reports.html">
+              <li class="<?= uriIs('/StudentManagementSystem/reports') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/reports">
                   <i class="icon ph-bold ph-trend-up"></i>
                   <span class="text">Reports</span>
                 </a>
-              </li>
               </li>
             </ul>
           </div>
@@ -130,56 +115,12 @@
         <div class="menu">
             <p class="title">System Settings</p>
             <ul>
-              <li>
-                <a href="#">
+              <li class="<?= uriIs('/StudentManagementSystem/setting') ? 'active' : '' ?>">
+                <a href="/StudentManagementSystem/setting">
                   <i class="icon ph-bold ph-gear"></i>
                   <span class="text">Settings</span>
                 </a>
               </li>
             </ul>
-          </div>
-      </div>
-      
-      <div class="main">
-        <div class="top-nav">
-
-          <!-- SEARCH -->
-          <div class="input-top">
-            <i class="ph ph-magnifying-glass search-icon"></i>
-            <input type="text" class="top-input" placeholder="Search students, employees, courses...">
-          </div>
-
-          <!-- RIGHT SIDE -->
-          <div class="top-logo-notify">
-
-            <!-- NOTIFICATION -->
-            <div class="notify-bell">
-              <i class="ph ph-bell-simple"></i>
-              <span class="badge">2</span>
-
-              <!-- Dropdown -->
-              <div class="dropdown">
-                <p>No new notifications</p>
-              </div>
-            </div>
-
-            <!-- USER -->
-            <div class="head-top">
-              <div class="user-img">
-                <img src="./assets/img/logo.png" alt="">
-              </div>
-              <div class="user-details">
-                <p class="title">Super Admin</p>
-                <p class="name">Super Administrator</p>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-      </div>
-    </div>
-
-    <script src="./assets/js/sidebar.js" ></script>
-  </body>
-</html>
+</div>
