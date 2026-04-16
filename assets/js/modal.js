@@ -8,8 +8,11 @@ addModalStudent.addEventListener('click', () => {
 });
 
 closeModal.addEventListener('click', (e) => {
-    e.preventDefault();
         displayModal.classList.remove("active");
+        setTimeout(() => {
+        location.reload();
+    }, 300);
 });
+// window.location.reload();
 
 
