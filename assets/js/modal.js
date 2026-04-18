@@ -1,18 +1,26 @@
-
 const addModalStudent  = document.querySelector(".addModalStudent");
-const closeModal  = document.querySelector('.modal-close');
 const displayModal = document.getElementById('addStudentModal');
+const closeModalButtons = document.querySelectorAll('.modal-close');
 
-addModalStudent.addEventListener('click', () => {
-    displayModal.classList.add("active"); 
-});
+if (addModalStudent && displayModal) {
+    addModalStudent.addEventListener('click', (e) => {
+        e.preventDefault();
+        displayModal.classList.add("active");
+    });
+}
 
-closeModal.addEventListener('click', (e) => {
-        displayModal.classList.remove("active");
-        setTimeout(() => {
-        location.reload();
-    }, 300);
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const overlay = e.target.closest('.modal-overlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+            if (overlay.id === 'addStudentModal') {
+                setTimeout(() => {
+                    location.reload();
+                }, 300);
+            }
+        }
+    });
 });
-// window.location.reload();
 
 
