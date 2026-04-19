@@ -13,13 +13,13 @@ In Controller folder all requests come from view
 
 # Plan Goal: 
 ```
-Add new student to database
+✅student management done
+✅employee management done
 
-1. Create Add Student button
-2. Create form (firstname, lastname, email)
-3. Handle form submission
-4. Insert data into database
-5. Redirect back to student list
+next academic management(courses, subjects, schedule)
+plan for this make new routes for easy toggle.
+add a php file in every academic.
+
 
 ```
 

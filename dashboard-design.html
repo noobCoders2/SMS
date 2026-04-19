@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System - Dashboard Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.0/src/regular/style.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <style>
+        /* Additional styles for demo */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        .demo-notice {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #fbbf24;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-notice">
+        🎨 <strong>Design Preview:</strong> This is a design-focused dashboard using mock data. Replace with real backend queries when ready.
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="menu">
+            <div class="user-details">
+                <div class="user-img">
+                    <img src="https://via.placeholder.com/40x40/2563eb/ffffff?text=A" alt="Admin">
+                </div>
+                <div class="title">Administrator</div>
+                <div class="name">Admin User</div>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <i class="ph ph-house"></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-users"></i>
+                        <span class="text">Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-user-gear"></i>
+                        <span class="text">Employees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-exam"></i>
+                        <span class="text">Academic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-currency-dollar"></i>
+                        <span class="text">Fees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-calendar-check"></i>
+                        <span class="text">Attendance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-chart-bar"></i>
+                        <span class="text">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ph ph-gear"></i>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            <i class="ph ph-caret-left"></i>
+        </div>
+    </nav>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="input-top">
+            <i class="ph ph-magnifying-glass search-icon"></i>
+            <input type="text" class="top-input" placeholder="Search...">
+        </div>
+        <div class="top-logo-notify">
+            <div class="notify-bell">
+                <i class="ph ph-bell"></i>
+                <span class="badge">3</span>
+            </div>
+            <div class="head-top">
+                <div class="user-img">
+                    <img src="https://via.placeholder.com/40x40/2563eb/ffffff?text=A" alt="Admin">
+                </div>
+                <div class="user-details">
+                    <div class="title">Administrator</div>
+                    <div class="name">Admin User</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="content">
+            <!-- HEADER -->
+            <div class="header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome to Student Management System</p>
+                </div>
+            </div>
+
+            <!-- STATISTICS CARDS -->
+            <div class="stats">
+                <div class="card stat-card stat-total">
+                    <div class="card-title">
+                        <i class="ph ph-users stat-icon"></i>
+                        <span>Total Students</span>
+                    </div>
+                    <h2>399</h2>
+                    <p class="stat-change positive">+12% from last month</p>
+                </div>
+                <div class="card stat-card stat-employees">
+                    <div class="card-title">
+                        <i class="ph ph-user-gear stat-icon"></i>
+                        <span>Total Employees</span>
+                    </div>
+                    <h2>24</h2>
+                    <p class="stat-change positive">+2 new this month</p>
+                </div>
+                <div class="card stat-card stat-revenue">
+                    <div class="card-title">
+                        <i class="ph ph-currency-dollar stat-icon"></i>
+                        <span>Total Revenue</span>
+                    </div>
+                    <h2>₱125,000.00</h2>
+                    <p class="stat-change positive">+8% from last month</p>
+                </div>
+                <div class="card stat-card stat-attendance">
+                    <div class="card-title">
+                        <i class="ph ph-calendar-check stat-icon"></i>
+                        <span>Today's Attendance</span>
+                    </div>
+                    <h2>87.5%</h2>
+                    <p class="stat-change neutral">Rate today</p>
+                </div>
+            </div>
+
+            <!-- CHARTS SECTION -->
+            <div class="charts-grid">
+                <!-- Monthly Enrollment Chart -->
+                <div class="card chart-card">
+                    <div class="card-title">
+                        <h3>Monthly Enrollment</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="enrollmentChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Revenue Chart -->
+                <div class="card chart-card">
+                    <div class="card-title">
+                        <h3>Monthly Revenue</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Student Distribution Chart -->
+                <div class="card chart-card">
+                    <div class="card-title">
+                        <h3>Student Distribution by Program</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Monthly Attendance Rate Chart -->
+                <div class="card chart-card">
+                    <div class="card-title">
+                        <h3>Monthly Attendance Rate</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="attendanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM CARDS -->
+            <div class="bottom-cards">
+                <!-- Recent Enrollments -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Recent Enrollments</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="enrollment-list">
+                        <div class="enrollment-item">
+                            <div class="enrollment-info">
+                                <div class="enrollment-name">John Doe</div>
+                                <div class="enrollment-details">2026001 • BSCS</div>
+                            </div>
+                            <div class="enrollment-date">Apr 15, 2026</div>
+                        </div>
+                        <div class="enrollment-item">
+                            <div class="enrollment-info">
+                                <div class="enrollment-name">Jane Smith</div>
+                                <div class="enrollment-details">2026002 • BSIT</div>
+                            </div>
+                            <div class="enrollment-date">Apr 14, 2026</div>
+                        </div>
+                        <div class="enrollment-item">
+                            <div class="enrollment-info">
+                                <div class="enrollment-name">Mike Johnson</div>
+                                <div class="enrollment-details">2026003 • BSEMC</div>
+                            </div>
+                            <div class="enrollment-date">Apr 13, 2026</div>
+                        </div>
+                        <div class="enrollment-item">
+                            <div class="enrollment-info">
+                                <div class="enrollment-name">Sarah Williams</div>
+                                <div class="enrollment-details">2026004 • BSBA</div>
+                            </div>
+                            <div class="enrollment-date">Apr 12, 2026</div>
+                        </div>
+                        <div class="enrollment-item">
+                            <div class="enrollment-info">
+                                <div class="enrollment-name">David Brown</div>
+                                <div class="enrollment-details">2026005 • BSCS</div>
+                            </div>
+                            <div class="enrollment-date">Apr 11, 2026</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Upcoming Events</h3>
+                        <a href="#" class="view-all">View Calendar</a>
+                    </div>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <div class="event-icon">
+                                <i class="ph ph-exam"></i>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-title">Midterm Examinations</div>
+                                <div class="event-date">March 15-20, 2026</div>
+                                <div class="event-description">Final examinations for all subjects</div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon">
+                                <i class="ph ph-users-three"></i>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-title">Faculty Meeting</div>
+                                <div class="event-date">March 25, 2026</div>
+                                <div class="event-description">Monthly faculty coordination meeting</div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon">
+                                <i class="ph ph-calendar-plus"></i>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-title">Enrollment Period</div>
+                                <div class="event-date">April 1-30, 2026</div>
+                                <div class="event-description">New student enrollment for next semester</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Monthly Enrollment Chart
+        const enrollmentCtx = document.getElementById('enrollmentChart').getContext('2d');
+        new Chart(enrollmentCtx, {
+            type: 'line',
+            data: {
+                labels: ['Sep 2025', 'Oct 2025', 'Nov 2025', 'Dec 2025', 'Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026'],
+                datasets: [{
+                    label: 'Enrollments',
+                    data: [45, 52, 38, 67, 43, 58, 72, 35],
+                    borderColor: '#2563eb',
+                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { precision: 0 } }
+                }
+            }
+        });
+
+        // Revenue Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Sep 2025', 'Oct 2025', 'Nov 2025', 'Dec 2025', 'Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026'],
+                datasets: [{
+                    label: 'Revenue (₱)',
+                    data: [85000, 92000, 78000, 105000, 88000, 96000, 112000, 65000],
+                    backgroundColor: '#10b981',
+                    borderColor: '#059669',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '₱' + value.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Student Distribution Chart
+        const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+        new Chart(distributionCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['BSCS', 'BSIT', 'BSEMC', 'BSBA'],
+                datasets: [{
+                    data: [145, 98, 67, 89],
+                    backgroundColor: ['#2563eb', '#10b981', '#f59e0b', '#ef4444'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { padding: 20, usePointStyle: true } }
+                }
+            }
+        });
+
+        // Monthly Attendance Rate Chart
+        const attendanceCtx = document.getElementById('attendanceChart').getContext('2d');
+        new Chart(attendanceCtx, {
+            type: 'line',
+            data: {
+                labels: ['Sep 2025', 'Oct 2025', 'Nov 2025', 'Dec 2025', 'Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026'],
+                datasets: [{
+                    label: 'Attendance Rate (%)',
+                    data: [85.2, 88.7, 82.1, 91.3, 86.8, 89.4, 87.9, 84.6],
+                    borderColor: '#8b5cf6',
+                    backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { callback: function(value) { return value + '%'; } } }
+                }
+            }
+        });
+
+        // Sidebar toggle functionality
+        const menuBtn = document.querySelector('.menu-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const main = document.querySelector('.main');
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            main.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

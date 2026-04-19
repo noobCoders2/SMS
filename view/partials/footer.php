@@ -7,5 +7,6 @@
     <script src="./assets/js/academic_btn.js"></script>
     <script src="./assets/js/modal.js"></script>
     <script type="module" src="./assets/js/mainStudent.js"></script>
+    <script src=".assets/js/employee/mainEmployee.js"></script>
   </body>
 </html>

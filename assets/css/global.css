@@ -314,12 +314,12 @@ body {
 .header h1 {
   font-size: 22px;
   font-weight: 600;
-  color: #1e293b;
+  color: #ffff;
 }
 
 .header p {
   font-size: 13px;
-  color: #64748b;
+  color: #fafbfd;
   margin-top: 3px;
 }
 .actions {
@@ -347,6 +347,16 @@ body {
 
 .btn.primary:hover {
   background: #1e40af;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
 }
 
 .search {
@@ -476,6 +486,24 @@ td:last-child {
 .stat-card.stat-bit {
   background: linear-gradient(135deg, #fef3c7, #fffbeb);
 }
+.stat-card.stat-active {
+  background: linear-gradient(135deg, #d1fae5, #ecfdf5);
+}
+.stat-card.stat-inactive {
+  background: linear-gradient(135deg, #fee2e2, #fef2f2);
+}
+.stat-card.stat-professors {
+  background: linear-gradient(135deg, #ede9fe, #f5f3ff);
+}
+.stat-card.stat-employees {
+  background: linear-gradient(135deg, #fed7d7, #fef5e7);
+}
+.stat-card.stat-revenue {
+  background: linear-gradient(135deg, #c6f6d5, #e6fffa);
+}
+.stat-card.stat-attendance {
+  background: linear-gradient(135deg, #fef3c7, #fffbeb);
+}
 .stat-card::before {
   content: '';
   position: absolute;
@@ -497,6 +525,24 @@ td:last-child {
 }
 .stat-card.stat-bit::before {
   background: #f59e0b;
+}
+.stat-card.stat-active::before {
+  background: #10b981;
+}
+.stat-card.stat-inactive::before {
+  background: #ef4444;
+}
+.stat-card.stat-professors::before {
+  background: #8b5cf6;
+}
+.stat-card.stat-employees::before {
+  background: #f59e0b;
+}
+.stat-card.stat-revenue::before {
+  background: #059669;
+}
+.stat-card.stat-attendance::before {
+  background: #d97706;
 }
 .card-title {
   display: flex;
@@ -525,6 +571,24 @@ td:last-child {
 .stat-bit .stat-icon {
   background: #f59e0b;
 }
+.stat-active .stat-icon {
+  background: #10b981;
+}
+.stat-inactive .stat-icon {
+  background: #ef4444;
+}
+.stat-professors .stat-icon {
+  background: #8b5cf6;
+}
+.stat-employees .stat-icon {
+  background: #f59e0b;
+}
+.stat-revenue .stat-icon {
+  background: #059669;
+}
+.stat-attendance .stat-icon {
+  background: #d97706;
+}
 .card p {
   color: #475569;
   font-size: 14px;
@@ -532,6 +596,29 @@ td:last-child {
 .card h2 {
   margin-top: 8px;
   font-size: 28px;
+}
+
+/* =======================================Alerts======================================= */
+.alert {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.alert-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.alert-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
 }
 
 /* =======================================System Settings======================================= */
@@ -552,7 +639,7 @@ td:last-child {
 .settings-grid {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 .card {
@@ -748,7 +835,7 @@ input:checked + .slider:before {
 /* ====================================Fee=================================== */
 .fee-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 .fee-card {
@@ -849,7 +936,7 @@ input:checked + .slider:before {
 /* ============================Reports=========================== */
 .reports-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 .report-grid-generate{
